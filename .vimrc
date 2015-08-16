@@ -1,3 +1,4 @@
+set encoding=utf-8
 set nocompatible
 set backspace=indent,eol,start
 set tabstop=4
@@ -134,3 +135,14 @@ imap <c-]> <c-y>,
 " Vim vertical line at 80
 set colorcolumn=80
 highlight ColorColumn ctermbg=234 guibg=234
+
+
+" ------- Powerline Setup
+set rtp+=/usr/lib/python3.4/site-packages/powerline/bindings/vim/
+" Always show statusline
+set laststatus=2
+" Use 256 colours (Use this setting only if your terminal supports 256 colours)
+set t_Co=256
+" let g:airline_powerline_fonts = 1
+let Powerline_symbols='fancy'
+" set font=Inconsolata\ for\ Powerline
