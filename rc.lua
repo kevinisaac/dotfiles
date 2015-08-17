@@ -230,29 +230,27 @@ memwidget = lain.widgets.mem({
 })
 
 -- MPD
-mpdicon = wibox.widget.imagebox()
+mpdicon = wibox.widget.imagebox(beautiful.widget_music)
+mpdicon:buttons(awful.util.table.join(awful.button({ }, 1, function () awful.util.spawn_with_shell(musicplr) end)))
 mpdwidget = lain.widgets.mpd({
     settings = function()
-        mpd_notification_preset = {
-            text = string.format("%s [%s] - %s\n%s", mpd_now.artist,
-                   mpd_now.album, mpd_now.date, mpd_now.title)
-        }
-
         if mpd_now.state == "play" then
-            artist = mpd_now.artist .. " > "
-            title  = mpd_now.title .. " "
-            mpdicon:set_image(beautiful.widget_note_on)
+            artist = " " .. mpd_now.artist .. " "
+            title  = mpd_now.title  .. " "
+            mpdicon:set_image(beautiful.widget_music_on)
         elseif mpd_now.state == "pause" then
-            artist = "mpd "
+            artist = " mpd "
             title  = "paused "
         else
             artist = ""
             title  = ""
-            mpdicon:set_image(nil)
+            mpdicon:set_image(beautiful.widget_music)
         end
-        widget:set_markup(markup("#e54c62", artist) .. markup("#b2b2b2", title))
+
+        widget:set_markup(markup("#EA6F81", artist) .. title)
     end
 })
+mpdwidgetbg = wibox.widget.background(mpdwidget, "#313131")
 
 -- Spacer
 spacer = wibox.widget.textbox(" ")
@@ -405,9 +403,6 @@ root.buttons(awful.util.table.join(
 
 -- {{{ Key bindings
 globalkeys = awful.util.table.join(
-    -- Take a screenshot
-    -- https://github.com/copycat-killer/dots/blob/master/bin/screenshot
-    awful.key({ altkey }, "p", function() os.execute("screenshot") end),
 
     -- mpc hotkeys
     awful.key({ altkey }, "p", function () os.execute("mpc toggle") end),
