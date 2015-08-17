@@ -1,11 +1,16 @@
 --[[
-                                      
-     Multicolor Awesome WM config 2.0 
-     github.com/copycat-killer        
-                                      
+
+    Multicolor Awesome WM config 2.0 
+    github.com/copycat-killer        
+
 --]]
 
 -- {{{ Required libraries
+--
+-- Repeat Rate for keys
+os.execute("xset r rate 220 35")
+
+
 local gears     = require("gears")
 local awful     = require("awful")
 awful.rules     = require("awful.rules")

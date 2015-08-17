@@ -98,3 +98,6 @@ end
 
 . /usr/lib/python3.4/site-packages/powerline/bindings/fish/powerline-setup.fish
 powerline-setup
+
+# Start the powerline daemon to prevent lag
+powerline-daemon -q

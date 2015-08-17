@@ -15,6 +15,11 @@ set so=5                                    " provides a gap while scrolling
 set autowrite
 set nu                                      " sets the line number
 set nocp                                    " omnicpp installation
+
+" Set no backup or swapfile
+set nobackup
+set noswapfile
+
 " set option& sets the default value
 if has("vms")
     set nobackup
@@ -111,13 +116,18 @@ execute pathogen#infect()
 autocmd Filetype html,css,xml :setlocal sw=2 ts=2 sts=2
 au BufNewFile,BufRead *.jade set filetype=html
 autocmd BufRead,BufNewFile *.jade setlocal ft=jade
+au BufRead,BufNewFile *.fish set filetype=fish
 
 " Vim indent guides
-let g:indent_guides_auto_colors = 0
-autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=233
-autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=234
-autocmd BufReadPre,FileReadPre * :IndentGuidesEnable
+" let g:indent_guides_auto_colors = 0
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=233
+" autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=234
+" autocmd BufReadPre,FileReadPre * :IndentGuidesEnable
 
+" Indent Line plugin
+let g:indentLine_enabled = 1
+let g:indentLine_color_term = 237
+" let g:indentLine_char = 'c'
 
 " Python folding
 set foldmethod=indent
@@ -138,11 +148,11 @@ highlight ColorColumn ctermbg=234 guibg=234
 
 
 " ------- Powerline Setup
-set rtp+=/usr/lib/python3.4/site-packages/powerline/bindings/vim/
+" set rtp+=/usr/lib/python3.4/site-packages/powerline/bindings/vim/
 " Always show statusline
-set laststatus=2
+" set laststatus=2
 " Use 256 colours (Use this setting only if your terminal supports 256 colours)
-set t_Co=256
+" set t_Co=256
 " let g:airline_powerline_fonts = 1
-let Powerline_symbols='fancy'
+" let Powerline_symbols='fancy'
 " set font=Inconsolata\ for\ Powerline
