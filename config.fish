@@ -6,6 +6,10 @@ set -x ttymouse xterm2
 set -gx PATH "/usr/local/bin" "." $PATH
 bash ~/.local/bin/bashmarks.sh
 
+function fish_greeting
+    fortune
+end
+
 function fish_prompt
 	set_color purple
 	printf "---------->["

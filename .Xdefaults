@@ -1,6 +1,6 @@
 URxvt*cursorBlink:     true
 # URxvt*cursorUnderline: true
-URxvt*font: xft:Inconsolata for Powerline:pixelsize=15:antialias=true:hinting=true
+URxvt*font: xft:Inconsolata for Powerline:pixelsize=15:antialias=true:hinting=true,Literation Mono Powerline:pixelsize=15:antialias=true:hinting=true
 URxvt*boldFont: xft:Inconsolata for Powerline:bold:pixelsize=15:antialias=true:hinting=true
 URxvt*scrollBar:       false
 URxvt.perl-ext-common: default,matcher
