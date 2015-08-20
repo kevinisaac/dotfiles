@@ -1,0 +1,184 @@
+snippet #!
+	#!/usr/bin/python
+
+snippet im
+	import ${1:module}
+# Module Docstring
+snippet docs
+	'''
+	File: ${1:`Filename('$1.py', 'foo.py')`}
+	Author: ${2:`g:snips_author`}
+	Description: ${3}
+	'''
+snippet if
+	if ${1:condition}:
+		${2:# code...}
+snippet eif
+	if ${1:condition}:
+		${2:# code...}
+	elif ${3:condition}:
+		${4:# code...}
+	else:
+		${5:# code...}
+snippet el
+	if ${1:condition}:
+		${2:# code...}
+	else:
+		${3:# code...}
+snippet wh
+	while ${1:condition}:
+		${2:# code...}
+snippet for
+	for ${1:needle} in ${2:haystack}:
+		${3:# code...}
+# New Class
+snippet cl
+	class ${1:ClassName}(${2:object}):
+		"""${3:docstring for $1}"""
+
+		def __init__(self, ${4:arg}):
+			${5:super($1, self).__init__()}
+			self.$4 = $4
+			${6}
+# New Function
+snippet def
+	def ${1:fname}(${2:`indent('.') ? 'self' : ''`}):
+		"""${3:docstring for $1}"""
+		${4:pass}
+snippet defc
+	${1:function}(${2:arg})
+snippet defq
+	${1:function}('${2:arg}')
+snippet deff
+	def ${1:fname}(${2:`indent('.') ? 'self' : ''`}):
+		${3}
+# New Method
+snippet defs
+	def ${1:mname}(self, ${2:arg}):
+		${3:pass}
+# New Property
+snippet property
+	def ${1:foo}():
+		doc = "${2:The $1 property.}"
+		def fget(self):
+			${3:return self._$1}
+		def fset(self, value):
+			${4:self._$1 = value}
+# Lambda
+snippet ld
+	${1:var} = lambda ${2:vars} : ${3:action}
+snippet .
+	self.
+snippet try Try/Except
+	try:
+		${1:pass}
+	except ${2:Exception}, ${3:e}:
+		${4:raise $3}
+snippet try Try/Except/Else
+	try:
+		${1:pass}
+	except ${2:Exception}, ${3:e}:
+		${4:raise $3}
+	else:
+		${5:pass}
+snippet try Try/Except/Finally
+	try:
+		${1:pass}
+	except ${2:Exception}, ${3:e}:
+		${4:raise $3}
+	finally:
+		${5:pass}
+snippet try Try/Except/Else/Finally
+	try:
+		${1:pass}
+	except ${2:Exception}, ${3:e}:
+		${4:raise $3}
+	else:
+		${5:pass}
+	finally:
+		${6:pass}
+# if __name__ == '__main__':
+snippet ifmain
+	if __name__ == '__main__':
+		${1:main()}
+# __magic__
+snippet _
+	__${1:init}__${2}
+
+
+
+
+
+
+
+
+
+
+### Gremlin
+snippet gs
+	${1:script_get_nodes} = """
+		g.v('${2:%s}')
+		${4}
+	""" % ${3:self.eid}
+snippet go
+	.outV('${1:edge}')${2}
+snippet ge
+	.outE('${1:edge}')${2}
+snippet gi
+	.inV('${1:edge}')${2}
+snippet gie
+	.inE('${1:edge}')${2}
+snippet gh
+	.has('${1:cup}', '${2:coffee}')${3}
+snippet ga
+	.as('${1:x}')${2}
+snippet gb
+	.back('${1:x}')${2}
+snippet gl
+	.loop('${1:x}'){it.${2:loops < 777}}
+snippet gp
+	.path
+snippet gr
+	'%s'
+
+
+
+
+
+### apiDoc
+snippet api
+	@api {${1:get}} /${2:resrc} ${3:description}
+snippet apin
+	@apiName ${1:ApiName}
+snippet apig
+	@apiGroup ${1:GroupName}
+snippet apip
+	@apiParam {${1:String}} ${2:field} ${3:description}
+snippet apis
+	@apiSuccess {${1:String}} ${2:field} ${3:description}
+snippet apise
+	@apiSuccessExample Success-Response:
+	HTTP/1.1 ${1:200} ${2:OK}
+	{
+		"status": "success",
+		"data": {
+			"http_status": "$1",
+			"${4:key}": "${5:value}"${6}
+		},
+		"message": "${3:Message}"
+	}
+snippet apij
+	"${1:key}": "${2:value}"${3}
+snippet apie
+	@apiError {${1:String}} ${2:field} ${3:description}
+snippet apiee
+	@apiErrorExample Error-Response:
+	HTTP/1.1 ${1:400} ${2:Not Found}
+	{
+		"status": "error",
+		"data": {
+			"http_status": "$1",
+			"${4:key}": "${5:value}"${6}
+		},
+		"message": "${3:Message}"
+	}
