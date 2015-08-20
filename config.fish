@@ -7,7 +7,7 @@ set -gx PATH "/usr/local/bin" "." $PATH
 bash ~/.local/bin/bashmarks.sh
 
 function fish_greeting
-    fortune phrases
+    fortune phrases vocabulary
 end
 
 function fish_prompt
