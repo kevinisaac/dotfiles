@@ -105,3 +105,5 @@ powerline-setup
 
 # Start the powerline daemon to prevent lag
 powerline-daemon -q
+
+killall conky

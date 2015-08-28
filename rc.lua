@@ -8,7 +8,7 @@
 -- {{{ Required libraries
 --
 -- Repeat Rate for keys
-os.execute("xset r rate 220 35")
+os.execute("xset r rate 220 55")
 
 
 local gears     = require("gears")

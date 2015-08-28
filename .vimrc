@@ -13,7 +13,8 @@ set sidescroll=10                           " scroll with 10 characters side off
 set incsearch
 set so=5                                    " provides a gap while scrolling
 set autowrite
-set nu                                      " sets the line number
+set number                                  " sets the line number
+set relativenumber                          " sets the relative line number
 set nocp                                    " omnicpp installation
 
 " Set no backup or swapfile
@@ -153,6 +154,9 @@ highlight ColorColumn ctermbg=234 guibg=234
 " set laststatus=2
 " Use 256 colours (Use this setting only if your terminal supports 256 colours)
 " set t_Co=256
-" let g:airline_powerline_fonts = 1
+" For vim-airline
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+set laststatus=2
 " let Powerline_symbols='fancy'
 " set font=Inconsolata\ for\ Powerline
