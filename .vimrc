@@ -160,3 +160,6 @@ let g:airline#extensions#tabline#enabled = 1
 set laststatus=2
 " let Powerline_symbols='fancy'
 " set font=Inconsolata\ for\ Powerline
+"
+" CtrlP settings
+let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
