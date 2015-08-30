@@ -144,7 +144,7 @@ map ;; :vertical wincmd f<CR>
 imap <c-]> <c-y>,
 
 " Vim vertical line at 80
-set colorcolumn=80
+au Filetype python set colorcolumn=80
 highlight ColorColumn ctermbg=234 guibg=234
 
 
