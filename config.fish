@@ -5,9 +5,10 @@ set -x TERMINUS_DEV_CONF /home/kevin/Code/python/flask/xlate/config/development.
 set -x ttymouse xterm2
 set -gx PATH "/usr/local/bin" "." $PATH
 bash ~/.local/bin/bashmarks.sh
+set -x PYTHONSTARTUP /home/kevin/Code/python/scripts/pretty_json.py
 
 function fish_greeting
-    fortune phrases vocabulary
+#     fortune phrases vocabulary
 end
 
 function fish_prompt

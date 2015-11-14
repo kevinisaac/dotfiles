@@ -80,7 +80,7 @@ au BufRead *.php set ft=php.html
 au BufNewFile *.php set ft=php.html
 
 " NERDTree snippets ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-let g:NERDTreeWinPos = "right"
+" let g:NERDTreeWinPos = "right"
 
 " Editor ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 set tw=0
@@ -88,7 +88,7 @@ set clipboard=unnamed
 
 " Session in vim -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 " Save session on quitting Vim
-autocmd VimLeave * NERDTreeClose
+" autocmd VimLeave * NERDTreeClose
 " autocmd VimLeave * mksession! [filename]
 
 " Restore session on starting Vim
