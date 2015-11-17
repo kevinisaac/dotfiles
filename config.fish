@@ -13,19 +13,6 @@ function fish_greeting
 #     fortune phrases vocabulary
 end
 
-function fish_prompt
-	set_color purple
-	printf "---------->["
-	set now (date +"%A %d %b")
-	printf $now | sed ':a;N;$!ba;s/\n/ /g'
-	printf '] '
-	set_color blue
-	echo (pwd)
-	set_color purple
-	printf '-> '
-	set_color normal
-end
-
 # Load fishmarks (http://github.com/techwizrd/fishmarks)
 . $HOME/.fishmarks/marks.fish
 
@@ -103,10 +90,20 @@ if status --is-login
     end
 end
 
-. /usr/lib/python3.4/site-packages/powerline/bindings/fish/powerline-setup.fish
-powerline-setup
+# . /usr/lib/python3.4/site-packages/powerline/bindings/fish/powerline-setup.fish
+# powerline-setup
 
 # Start the powerline daemon to prevent lag
-powerline-daemon -q
+# powerline-daemon -q
 
-killall conky
+# Path to Oh My Fish install.
+set -gx OMF_PATH /home/kevin/.local/share/omf
+
+# Customize Oh My Fish configuration path.
+#set -gx OMF_CONFIG /home/kevin/.config/omf
+
+# Load oh-my-fish configuration.
+source $OMF_PATH/init.fish
+
+###########################################
+
