@@ -1,0 +1,1 @@
+/home/kevin/Code/vim/airline-hogan/hogan.vim

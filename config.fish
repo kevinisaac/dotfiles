@@ -7,7 +7,7 @@ set -gx PATH "/usr/local/bin" "." $PATH
 bash ~/.local/bin/bashmarks.sh
 set -x PYTHONSTARTUP /home/kevin/Code/python/scripts/pretty_json.py
 # Set the key repeat rate
-set r rate 160 60
+set r rate 120 50
 
 function fish_greeting
 #     fortune phrases vocabulary
