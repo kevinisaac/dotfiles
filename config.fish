@@ -7,7 +7,7 @@ set -gx PATH "/usr/local/bin" "." $PATH
 bash ~/.local/bin/bashmarks.sh
 set -x PYTHONSTARTUP /home/kevin/Code/python/scripts/pretty_json.py
 # Set the key repeat rate
-set r rate 120 50
+xset r rate 160 60
 
 function fish_greeting
 #     fortune phrases vocabulary
@@ -21,7 +21,7 @@ function starttitan
 end
 
 function startorientdb
-    /home/kevin/Software/development/databases/orientdb-community-2.0.5/bin/server.sh
+    /home/kevin/Software/development/databases/orientdb-community-2.1.5/bin/server.sh
 end
 
 function startrexster

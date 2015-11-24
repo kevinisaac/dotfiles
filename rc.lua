@@ -412,6 +412,7 @@ globalkeys = awful.util.table.join(
     -- mpc hotkeys
     awful.key({ altkey }, "p", function () os.execute("mpc toggle") end),
     awful.key({ altkey }, "q", function () os.execute("mpc stop") end),
+    awful.key({ altkey }, "r", function () os.execute("mpc seek 0%") end),
     awful.key({ altkey }, "s", function () os.execute("mpc shuffle") end),
     awful.key({ altkey }, "n", function () os.execute("mpc next") end),
     awful.key({ altkey }, "e", function () os.execute("mpc prev") end),
