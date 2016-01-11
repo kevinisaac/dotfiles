@@ -133,7 +133,7 @@ let g:indentLine_color_term = 237
 " Python folding
 set foldmethod=indent
 set foldnestmax=2
-noremap <space> za
+noremap <Space> za
 noremap <NUL> zR
 
 " File manipulation
