@@ -81,7 +81,7 @@ file_manager = "xfe"
 browser      = "chromium" or "dwb"
 browser2     = "iron"
 gui_editor   = "gvim"
-graphics     = "gimp"
+graphics     = "inkscape"
 html_editor  = "brackets"
 mail         = terminal .. " -e mutt "
 

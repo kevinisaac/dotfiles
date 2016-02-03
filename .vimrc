@@ -145,7 +145,8 @@ map ;; :vertical wincmd f<CR>
 
 " Emmet mapping
 "imap <c-]> <c-y>,
-let g:user_emmet_expandabbr_key = '<C-Z>'
+let g:user_emmet_expandabbr_key = '<C-X>'
+let g:user_emmet_togglecomment_key = '<C-C>'
 
 " Vim vertical line at 80
 au Filetype python set colorcolumn=80
