@@ -3,7 +3,6 @@ set -x EDITOR vim
 set -x TERMINAL gnome-terminal
 set -x TERMINUS_DEV_CONF /home/kevin/Code/python/flask/xlate/config/development.py
 set -x ttymouse xterm2
-set -gx PATH "/usr/local/bin" "." $PATH
 bash ~/.local/bin/bashmarks.sh
 set -x PYTHONSTARTUP /home/kevin/Code/python/scripts/pretty_json.py
 # Set the key repeat rate
@@ -53,3 +52,4 @@ source $OMF_PATH/init.fish
 
 ###########################################
 
+set -gx PATH "/usr/local/bin" "." "/home/kevin/.gem/ruby/2.3.0/bin" $PATH

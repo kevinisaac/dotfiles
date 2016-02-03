@@ -119,6 +119,9 @@ au BufNewFile,BufRead *.jade set filetype=html
 autocmd BufRead,BufNewFile *.jade setlocal ft=jade
 au BufRead,BufNewFile *.fish set filetype=fish
 
+" Autosave CSS file
+" autocmd  TextChanged,TextChangedI <buffer> silent write
+
 " Vim indent guides
 " let g:indent_guides_auto_colors = 0
 " autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=233
@@ -141,7 +144,8 @@ noremap tt  :tab split<CR>
 map ;; :vertical wincmd f<CR>
 
 " Emmet mapping
-imap <c-]> <c-y>,
+"imap <c-]> <c-y>,
+let g:user_emmet_expandabbr_key = '<C-Z>'
 
 " Vim vertical line at 80
 au Filetype python set colorcolumn=80

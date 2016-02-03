@@ -82,6 +82,7 @@ browser      = "chromium" or "dwb"
 browser2     = "iron"
 gui_editor   = "gvim"
 graphics     = "gimp"
+html_editor  = "brackets"
 mail         = terminal .. " -e mutt "
 
 local layouts = {
@@ -585,6 +586,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey }, "i", function () awful.util.spawn(browser2) end),
     awful.key({ modkey }, "s", function () awful.util.spawn(gui_editor) end),
     awful.key({ modkey }, "g", function () awful.util.spawn(graphics) end),
+    awful.key({ modkey }, "m", function () awful.util.spawn(html_editor) end),
 
     -- Prompt
     awful.key({ modkey }, "r", function () mypromptbox[mouse.screen]:run() end),
