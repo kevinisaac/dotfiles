@@ -1,5 +1,5 @@
 set -x BROWSER chromium
-set -x EDITOR vim
+set -x EDITOR nvim
 set -x TERMINAL gnome-terminal
 set -x TERMINUS_DEV_CONF /home/kevin/Code/python/flask/xlate/config/development.py
 set -x ttymouse xterm2
@@ -53,3 +53,6 @@ source $OMF_PATH/init.fish
 ###########################################
 
 set -gx PATH "/usr/local/bin" "." "/home/kevin/.gem/ruby/2.3.0/bin" $PATH
+
+alias vim nvim
+alias n ncmpcpp

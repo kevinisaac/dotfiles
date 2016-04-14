@@ -82,6 +82,7 @@ browser      = "chromium" or "dwb"
 browser2     = "iron"
 gui_editor   = "gvim"
 graphics     = "inkscape"
+linthesia    = "/usr/games/linthesia"
 html_editor  = "brackets"
 mail         = terminal .. " -e mutt "
 
@@ -246,11 +247,13 @@ mpdwidget = lain.widgets.mpd({
     settings = function()
         if mpd_now.state == "play" then
             artist = " " .. mpd_now.artist .. " "
-            title  = mpd_now.title  .. " "
+            title  = mpd_now.title  .. " - Playing "
             mpdicon:set_image(beautiful.widget_music_on)
         elseif mpd_now.state == "pause" then
-            artist = " mpd "
-            title  = "paused "
+            artist = " " .. mpd_now.artist .. " "
+            title  = mpd_now.title  .. " - Paused "
+            -- artist = " mpd "
+            -- title  = "paused "
         else
             artist = ""
             title  = ""
@@ -586,6 +589,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey }, "i", function () awful.util.spawn(browser2) end),
     awful.key({ modkey }, "s", function () awful.util.spawn(gui_editor) end),
     awful.key({ modkey }, "g", function () awful.util.spawn(graphics) end),
+    awful.key({ modkey }, "a", function () awful.util.spawn(linthesia) end),
     awful.key({ modkey }, "m", function () awful.util.spawn(html_editor) end),
 
     -- Prompt
