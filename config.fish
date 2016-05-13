@@ -1,5 +1,5 @@
 set -x BROWSER chromium
-set -x EDITOR vim
+set -x EDITOR nvim
 set -x TERMINAL gnome-terminal
 set -x TERMINUS_DEV_CONF /home/kevin/Code/python/flask/xlate/config/development.py
 set -x ttymouse xterm2
