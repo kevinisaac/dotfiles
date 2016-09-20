@@ -1,5 +1,6 @@
 set -x BROWSER chromium
 set -x EDITOR nvim
+set -x STAGING_WRITECOPY "1"
 set -x TERMINAL gnome-terminal
 set -x TERMINUS_DEV_CONF /home/kevin/Code/python/flask/xlate/config/development.py
 set -x ttymouse xterm2
@@ -7,6 +8,8 @@ bash ~/.local/bin/bashmarks.sh
 set -x PYTHONSTARTUP /home/kevin/Code/python/scripts/pretty_json.py
 # Set the key repeat rate
 xset r rate 160 60
+# Silence the irritating beep
+xset -b
 
 function fish_greeting
 #     fortune phrases vocabulary
@@ -16,7 +19,7 @@ end
 . $HOME/.fishmarks/marks.fish
 
 function starttitan
-    /home/kevin/Software/development/databases/titan-server-0.4.4/bin/titan.sh -c cassandra-es start
+    /home/kevin/Software/development/databases/titan-0.5.4-hadoop2/bin/titan.sh start
 end
 
 function startorientdb
