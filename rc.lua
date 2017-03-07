@@ -85,6 +85,7 @@ graphics     = "inkscape"
 linthesia    = "/usr/games/linthesia"
 html_editor  = "brackets"
 mail         = terminal .. " -e mutt "
+nomacs       = "nomacs /home/kevin/Pictures/HandyImages/UCB_Emoticons.png"
 
 local layouts = {
     awful.layout.suit.floating,
@@ -591,6 +592,7 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey }, "g", function () awful.util.spawn(graphics) end),
     awful.key({ modkey }, "a", function () awful.util.spawn(linthesia) end),
     awful.key({ modkey }, "m", function () awful.util.spawn(html_editor) end),
+    awful.key({ modkey }, "d", function () awful.util.spawn(nomacs) end),
 
     -- Prompt
     awful.key({ modkey }, "r", function () mypromptbox[mouse.screen]:run() end),
@@ -800,3 +802,16 @@ end
 --
 --
 --
+--
+-- Autorun programs
+-- autorun = true
+-- autorunApps =
+-- {
+    -- "chromium",
+    -- "urxvt"
+-- }
+-- if autorun then
+    -- for app = 1, #autorunApps do
+-- awful.util.spawn(autorunApps[app])
+-- awful.util.spawn("chromium")
+-- awful.util.spawn("urxvt")
