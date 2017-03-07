@@ -23,6 +23,12 @@ function startorientdb
     /home/kevin/Software/development/databases/orientdb-community-2.1.5/bin/server.sh
 end
 
+function startzucumber
+    cd /home/kevin/Code/zucumber
+    . venv/bin/activate.fish
+    python manage.py runserver
+end
+
 function startrexster
     cd /home/kevin/Software/development/databases/rexster-server-2.6.0
     ./bin/rexster.sh -s
@@ -42,13 +48,13 @@ end
 # powerline-daemon -q
 
 # Path to Oh My Fish install.
-set -gx OMF_PATH /home/kevin/.local/share/omf
+# set -gx OMF_PATH /home/kevin/.local/share/omf
 
 # Customize Oh My Fish configuration path.
 #set -gx OMF_CONFIG /home/kevin/.config/omf
 
 # Load oh-my-fish configuration.
-source $OMF_PATH/init.fish
+# source $OMF_PATH/init.fish
 
 ###########################################
 

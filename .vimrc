@@ -31,11 +31,11 @@ if has("vms")
 endif
 " set patchmode=.orig                         " keeps the original file
 " autocmd Filetype text setlocal textwidth=20
+
 filetype plugin on
 filetype indent on
 
 " syntax options
-
 set t_Co=256
 set background=light
 syntax enable
@@ -45,9 +45,6 @@ colorscheme vitamins
 set cursorline
 hi CursorLine cterm=bold ctermbg=234
 
-
-
-
 " configure tags - add additional tags here or comment out not-used ones
 set tags+=~/.vim/tags/cpp
 set tags+=~/.vim/tags/gl
@@ -56,26 +53,10 @@ set tags+=~/.vim/tags/qt4
 " build tags of your own project with Ctrl-F12
 map <C-F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
-" OmniCppComplete
-let OmniCpp_NamespaceSearch = 1
-let OmniCpp_GlobalScopeSearch = 1
-let OmniCpp_ShowAccess = 1
-let OmniCpp_ShowPrototypeInAbbr = 1 " show function parameters
-let OmniCpp_MayCompleteDot = 1 " autocomplete after .
-let OmniCpp_MayCompleteArrow = 1 " autocomplete after ->
-let OmniCpp_MayCompleteScope = 1 " autocomplete after ::
-let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
 " automatically open and close the popup menu / preview window
 au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
 set completeopt=menuone,menu,longest,preview
 
-autocmd Filetype java setlocal omnifunc=javacomplete#Complete
-autocmd FileType php set ft=php.laravel
-
-" if has("autocmd")
-"       autocmd Filetype java setlocal omnifunc=javacomplete#Complete
-"         autocmd Filetype java setlocal completefunc=javacomplete#CompleteParamsInfo
-" endif
 au BufRead *.php set ft=php.html
 au BufNewFile *.php set ft=php.html
 
@@ -111,7 +92,7 @@ noremap ;9  9<c-w><c-w>
 " Backup and original file -------------------------------------------------------------------------------------------------------------------------------------------------------------
 " set backupdir=./.backup/
 
-execute pathogen#infect()
+" execute pathogen#infect()
 
 " Set filetype tab spaces
 autocmd Filetype html,css,xml :setlocal sw=2 ts=2 sts=2
@@ -141,10 +122,8 @@ noremap <NUL> zR
 
 " File manipulation
 noremap tt  :tab split<CR>
-map ;; :vertical wincmd f<CR>
 
 " Emmet mapping
-"imap <c-]> <c-y>,
 let g:user_emmet_expandabbr_key = '<C-X>'
 let g:user_emmet_togglecomment_key = '<C-C>'
 
@@ -152,13 +131,6 @@ let g:user_emmet_togglecomment_key = '<C-C>'
 au Filetype python set colorcolumn=80
 highlight ColorColumn ctermbg=234 guibg=234
 
-
-" ------- Powerline Setup
-" set rtp+=/usr/lib/python3.4/site-packages/powerline/bindings/vim/
-" Always show statusline
-" set laststatus=2
-" Use 256 colours (Use this setting only if your terminal supports 256 colours)
-" set t_Co=256
 " For vim-airline
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
@@ -166,6 +138,15 @@ set laststatus=2
 let g:airline_theme="hogan"
 " let Powerline_symbols='fancy'
 " set font=Inconsolata\ for\ Powerline
-"
+
 " CtrlP settings
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
+
+call plug#begin('~/.vim/plugged')
+    Plug 'Chiel92/vim-autoformat'
+    Plug 'editorconfig/editorconfig-vim'
+    Plug 'vim-airline/vim-airline'
+    Plug 'nathanaelkane/vim-indent-guides'
+    Plug 'mattn/emmet-vim'
+    " Plug ''
+call plug#end()

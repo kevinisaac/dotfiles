@@ -120,8 +120,8 @@ end
 -- }}}
 
 -- {{{ Freedesktop Menu
-mymainmenu = awful.menu.new({ items = require("menugen").build_menu(),
-                              theme = { height = 16, width = 130 }})
+--mymainmenu = awful.menu.new({ items = require("menugen").build_menu(),
+--                              theme = { height = 16, width = 130 }})
 -- }}}
 
 -- {{{ Wibox
@@ -408,7 +408,7 @@ end
 
 -- {{{ Mouse Bindings
 root.buttons(awful.util.table.join(
-    awful.button({ }, 3, function () mymainmenu:toggle() end),
+    -- awful.button({ }, 3, function () mymainmenu:toggle() end),
     awful.button({ }, 4, awful.tag.viewnext),
     awful.button({ }, 5, awful.tag.viewprev)
 ))
