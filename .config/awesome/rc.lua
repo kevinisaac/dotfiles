@@ -62,10 +62,11 @@ run_once({ "urxvtd", "unclutter -root" })
 local chosen_theme = "multicolor"
 local modkey       = "Mod4"
 local altkey       = "Mod1"
-local terminal     = "urxvtc" or "xterm"
-local editor       = os.getenv("EDITOR") or "nano" or "vi"
+local terminal     = "urxvt" or "xterm"
+local editor       = os.getenv("EDITOR") or "vim" or "nano"
 local gui_editor   = "gvim"
-local browser      = "firefox"
+local browser      = "chromium" or "firefox"
+local file_manager = "xfe"
 
 awful.util.terminal = terminal
 awful.util.tagnames = { "1", "2", "3", "4", "5" }
@@ -450,6 +451,197 @@ globalkeys = awful.util.table.join(
               {description = "lua execute prompt", group = "awesome"})
     --]]
 )
+
+-- {{{ Custom Key bindings
+
+globalkeys = awful.util.table.join(
+    -- mpc hotkeys
+    awful.key({ altkey }, "p", function () os.execute("mpc toggle") end),
+    awful.key({ altkey }, "q", function () os.execute("mpc stop") end),
+    awful.key({ altkey }, "r", function () os.execute("mpc seek 0%") end),
+    awful.key({ altkey }, "s", function () os.execute("mpc shuffle") end),
+    awful.key({ altkey }, "n", function () os.execute("mpc next") end),
+    awful.key({ altkey }, "e", function () os.execute("mpc prev") end),
+    awful.key({ altkey }, "c", function () os.execute("mpc clear") end),
+    awful.key({ altkey }, "f", function () os.execute("mpc seek +00:00:10") end),
+    awful.key({ altkey }, "b", function () os.execute("mpc seek -00:00:10") end),
+
+    -- Tag browsing
+    awful.key({ modkey }, "Left", 
+    function()
+        for i = 1, screen.count() do
+            awful.tag.viewprev(i)
+        end
+    end ),
+
+    awful.key({ modkey }, "Right", 
+    function()
+        for i = 1, screen.count() do
+            awful.tag.viewnext(i)
+        end
+    end ),
+    awful.key({ modkey }, "Escape", awful.tag.history.restore),
+
+    -- Non-empty tag browsing
+    awful.key({ altkey }, "Left", function () lain.util.tag_view_nonempty(-1) end),
+    awful.key({ altkey }, "Right", function () lain.util.tag_view_nonempty(1) end),
+
+    ------------------------- CHANGING HERE --------------------------
+    -- Default client focus
+    awful.key({ altkey }, "Tab",
+        function ()
+            awful.client.focus.byidx( 1)
+            if client.focus then client.focus:raise() end
+        end),
+    awful.key({ altkey }, "j",
+        function ()
+            awful.client.focus.byidx(-1)
+            if client.focus then client.focus:raise() end
+        end),
+
+    -- By direction client focus
+    awful.key({ modkey }, "j",
+        function()
+            awful.client.focus.bydirection("down")
+            if client.focus then client.focus:raise() end
+        end),
+    awful.key({ modkey }, "k",
+        function()
+            awful.client.focus.bydirection("up")
+            if client.focus then client.focus:raise() end
+        end),
+    awful.key({ modkey }, "h",
+        function()
+            awful.client.focus.bydirection("left")
+            if client.focus then client.focus:raise() end
+        end),
+    awful.key({ modkey }, "l",
+        function()
+            awful.client.focus.bydirection("right")
+            if client.focus then client.focus:raise() end
+        end),
+
+    -- Show Menu
+    awful.key({ modkey }, "w",
+        function ()
+            mymainmenu:show({ keygrabber = true })
+        end),
+
+    -- Show/Hide Wibox
+    awful.key({ modkey }, "q", function ()
+        mywibox[mouse.screen].visible = not mywibox[mouse.screen].visible
+        mybottomwibox[mouse.screen].visible = not mybottomwibox[mouse.screen].visible
+    end),
+
+    -- Layout manipulation
+    awful.key({ modkey, "Shift"   }, "j", function () awful.client.swap.byidx(  1)    end),
+    awful.key({ modkey, "Shift"   }, "k", function () awful.client.swap.byidx( -1)    end),
+    awful.key({ modkey, "Control" }, "j", function () awful.screen.focus_relative( 1) end),
+    awful.key({ modkey, "Control" }, "k", function () awful.screen.focus_relative(-1) end),
+    awful.key({ modkey,           }, "u", awful.client.urgent.jumpto),
+    -- awful.key({ modkey,           }, "Tab",
+    --     function ()
+    --         awful.client.focus.history.previous()
+    --         if client.focus then
+    --             client.focus:raise()
+    --         end
+    --     end),
+    awful.key({ altkey, "Shift"   }, "l",      function () awful.tag.incmwfact( 0.05)     end),
+    awful.key({ altkey, "Shift"   }, "h",      function () awful.tag.incmwfact(-0.05)     end),
+    awful.key({ modkey, "Shift"   }, "l",      function () awful.tag.incnmaster(-1)       end),
+    awful.key({ modkey, "Shift"   }, "h",      function () awful.tag.incnmaster( 1)       end),
+    awful.key({ modkey, "Control" }, "l",      function () awful.tag.incncol(-1)          end),
+    awful.key({ modkey, "Control" }, "h",      function () awful.tag.incncol( 1)          end),
+    awful.key({ modkey,           }, "space",  function () awful.layout.inc(layouts,  1)  end),
+    awful.key({ modkey, "Shift"   }, "space",  function () awful.layout.inc(layouts, -1)  end),
+    awful.key({ modkey, "Control" }, "n",      awful.client.restore),
+    ------------------------- CHANGING HERE --------------------------
+    awful.key({ modkey            }, "Tab", function () awful.screen.focus_relative( 1) end),
+
+    -- Standard program
+    awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),
+    awful.key({ modkey, "Control" }, "r",      awesome.restart),
+    awful.key({ modkey, "Shift"   }, "q",      awesome.quit),
+
+    -- Dropdown terminal
+    -- awful.key({ modkey,	          }, "z",      function () drop(dropterm) end),
+
+    -- Widgets popups
+    awful.key({ modkey,           }, "c",      function () lain.widgets.calendar:show(7) end),
+    awful.key({ altkey,           }, "h",      function () fswidget.show(7) end),
+    awful.key({ altkey,           }, "w",      function () yawn.show(7) end),
+
+    -- ALSA volume control
+    awful.key({ altkey }, "Up",
+        function ()
+            awful.util.spawn("amixer -q set Master 1%+")
+            volumewidget.update()
+        end),
+    awful.key({ altkey }, "Down",
+        function ()
+            awful.util.spawn("amixer -q set Master 1%-")
+            volumewidget.update()
+        end),
+    awful.key({ altkey }, "m",
+        function ()
+            awful.util.spawn("amixer -q set Master playback toggle")
+            volumewidget.update()
+        end),
+    awful.key({ altkey, "Control" }, "m",
+        function ()
+            awful.util.spawn("amixer -q set Master playback 100%")
+            volumewidget.update()
+        end),
+
+    -- MPD control
+    awful.key({ altkey, "Control" }, "Up",
+        function ()
+            awful.util.spawn_with_shell("mpc toggle || ncmpc toggle || pms toggle")
+            mpdwidget.update()
+        end),
+    awful.key({ altkey, "Control" }, "Down",
+        function ()
+            awful.util.spawn_with_shell("mpc stop || ncmpc stop || pms stop")
+            mpdwidget.update()
+        end),
+    awful.key({ altkey, "Control" }, "Left",
+        function ()
+            awful.util.spawn_with_shell("mpc prev || ncmpc prev || pms prev")
+            mpdwidget.update()
+        end),
+    awful.key({ altkey, "Control" }, "Right",
+        function ()
+            awful.util.spawn_with_shell("mpc next || ncmpc next || pms next")
+            mpdwidget.update()
+        end),
+
+    -- Copy to clipboard
+    awful.key({ modkey }, "c", function () os.execute("xsel -p -o | xsel -i -b") end),
+
+    -- xscreensaver
+    awful.key({ }, "F12", function () awful.util.spawn("xscreensaver-command -lock") end),
+
+    -- User programs
+    awful.key({ modkey }, "e", function () awful.util.spawn(file_manager) end),
+    awful.key({ modkey }, "b", function () awful.util.spawn(browser) end),
+    awful.key({ modkey }, "i", function () awful.util.spawn(browser2) end),
+    awful.key({ modkey }, "s", function () awful.util.spawn(gui_editor) end),
+    awful.key({ modkey }, "g", function () awful.util.spawn(graphics) end),
+    awful.key({ modkey }, "a", function () awful.util.spawn(linthesia) end),
+    awful.key({ modkey }, "m", function () awful.util.spawn(html_editor) end),
+
+    -- Prompt
+    awful.key({ modkey }, "r", function () mypromptbox[mouse.screen]:run() end),
+    awful.key({ modkey }, "x",
+              function ()
+                  awful.prompt.run({ prompt = "Run Lua code: " },
+                  mypromptbox[mouse.screen].widget,
+                  awful.util.eval, nil,
+                  awful.util.getdir("cache") .. "/history_eval")
+              end)
+)
+
+-- }}}
 
 clientkeys = awful.util.table.join(
     awful.key({ altkey, "Shift"   }, "m",      lain.util.magnify_client                         ),
