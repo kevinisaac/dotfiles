@@ -61,7 +61,7 @@ run_once({ "urxvtd", "unclutter -root" })
 -- }}}
 
 -- {{{ Variable definitions
-local chosen_theme = "multicolor"
+local chosen_theme = "holo"
 local modkey       = "Mod4"
 local altkey       = "Mod1"
 local terminal     = "urxvt" or "xterm"
@@ -71,7 +71,7 @@ local browser      = "chromium" or "firefox"
 local file_manager = "xfe"
 
 awful.util.terminal = terminal
-awful.util.tagnames = { "1", "2", "3", "4", "5" }
+awful.util.tagnames = { " ♠ Web ", " 😂 Hangouts ", " ❆ Video ", " ☕ Terminal ", " ♬ Music " }
 awful.layout.layouts = {
     awful.layout.suit.floating,
     awful.layout.suit.tile,
@@ -581,24 +581,30 @@ globalkeys = awful.util.table.join(
     -- ALSA volume control
     awful.key({ altkey }, "Up",
         function ()
-            awful.util.spawn("amixer -q set Master 1%+")
-            volumewidget.update()
+            os.execute(string.format("amixer set %s 1%%+", beautiful.volume.channel))
+            beautiful.volume.update()
         end),
     awful.key({ altkey }, "Down",
         function ()
-            awful.util.spawn("amixer -q set Master 1%-")
-            volumewidget.update()
+            os.execute(string.format("amixer set %s 1%%-", beautiful.volume.channel))
+            beautiful.volume.update()
         end),
     awful.key({ altkey }, "m",
         function ()
-            awful.util.spawn("amixer -q set Master playback toggle")
-            volumewidget.update()
+            os.execute(string.format("amixer set %s toggle", beautiful.volume.togglechannel or beautiful.volume.channel))
+            beautiful.volume.update()
         end),
     awful.key({ altkey, "Control" }, "m",
         function ()
-            awful.util.spawn("amixer -q set Master playback 100%")
-            volumewidget.update()
+            os.execute(string.format("amixer set %s 100%%", beautiful.volume.channel))
+            beautiful.volume.update()
         end),
+
+		awful.key({ altkey, "Control" }, "0",
+				function ()
+						os.execute(string.format("amixer -q set %s 0%%", beautiful.volume.channel))
+						beautiful.volume.update()
+				end),
 
     -- MPD control
     awful.key({ altkey, "Control" }, "Up",
