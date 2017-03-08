@@ -1,8 +1,9 @@
 /* URxvt*termName: rxvt-unicode */
 URxvt*cursorBlink:      false
 /* URxvt*cursorUnderline:  true */
-URxvt*font:             xft:Inconsolata:pixelsize=15
-URxvt*boldFont:         xft:Inconsolata:bold:pixelsize=15
+URxvt*font:             xft:Inconsolata\ for\ Powerline:pixelsize=15
+/*URxvt*font:             xft:Inconsolata\-g\ for\ Powerline:pixelsize=15*/
+URxvt*boldFont:         xft:Inconsolata\ for\ Powerline:bold:pixelsize=15
 URxvt*scrollBar:        false
 URxvt.perl-ext-common:  default,matcher
 URxvt.url-launcher:     firefox
@@ -39,7 +40,7 @@ URxvt.letterSpace:      -1
 rofi.width:           75
 rofi.lines:           10
 rofi.columns:         1
-rofi.font:            Inconsolata 14
+rofi.font:            Inconsolata\ for\ Powerline 15
 rofi.fg:              #ccb18b
 rofi.bg:              #282828
 rofi.hlfg:            #000000

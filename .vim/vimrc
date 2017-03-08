@@ -129,7 +129,8 @@ let g:user_emmet_togglecomment_key = '<C-C>'
 
 " Vim vertical line at 80
 au Filetype python set colorcolumn=80
-highlight ColorColumn ctermbg=234 guibg=234
+highlight ColorColumn ctermbg=234
+" guibg=234
 
 " For vim-airline
 let g:airline_powerline_fonts = 1
@@ -148,5 +149,6 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-airline/vim-airline'
     Plug 'nathanaelkane/vim-indent-guides'
     Plug 'mattn/emmet-vim'
+    Plug 'vim-airline/vim-airline-themes'
     " Plug ''
 call plug#end()
