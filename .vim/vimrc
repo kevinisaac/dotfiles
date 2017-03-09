@@ -46,16 +46,16 @@ set cursorline
 hi CursorLine cterm=bold ctermbg=234
 
 " configure tags - add additional tags here or comment out not-used ones
-set tags+=~/.vim/tags/cpp
-set tags+=~/.vim/tags/gl
-set tags+=~/.vim/tags/sdl
-set tags+=~/.vim/tags/qt4
+"set tags+=~/.vim/tags/cpp
+"set tags+=~/.vim/tags/gl
+"set tags+=~/.vim/tags/sdl
+"set tags+=~/.vim/tags/qt4
 " build tags of your own project with Ctrl-F12
-map <C-F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+"map <C-F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 
 " automatically open and close the popup menu / preview window
-au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
-set completeopt=menuone,menu,longest,preview
+"au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
+"set completeopt=menuone,menu,longest,preview
 
 au BufRead *.php set ft=php.html
 au BufNewFile *.php set ft=php.html
@@ -120,13 +120,6 @@ set foldnestmax=2
 noremap <Space> za
 noremap <NUL> zR
 
-" File manipulation
-noremap tt  :tab split<CR>
-
-" Emmet mapping
-let g:user_emmet_expandabbr_key = '<C-X>'
-let g:user_emmet_togglecomment_key = '<C-C>'
-
 " Vim vertical line at 80
 au Filetype python set colorcolumn=80
 highlight ColorColumn ctermbg=234
@@ -150,5 +143,35 @@ call plug#begin('~/.vim/plugged')
     Plug 'nathanaelkane/vim-indent-guides'
     Plug 'mattn/emmet-vim'
     Plug 'vim-airline/vim-airline-themes'
+    Plug 'tomtom/tcomment_vim'
     " Plug ''
 call plug#end()
+
+let g:user_emmet_expandabbr_key = '<C-X>'
+let g:user_emmet_togglecomment_key = '<C-V>'
+
+
+
+
+
+" View manipulation
+noremap tt  :tab split<CR>
+map '' :vsplit<CR>
+map "" :split<CR>
+map ;; :wq<CR>
+map <Tab> <c-w><c-w>
+
+" File manipulation
+map <c-s> <Esc>:w<CR>
+inoremap <c-s> <Esc>:w<CR>
+noremap <c-q> <Esc>:q<CR>
+noremap <C-e> <Esc>:so ~/.vim/vimrc<CR>
+
+noremap <C-Up> :m -2<CR>
+noremap <C-Down> :m +1<CR>
+
+" Emmet mapping
+
+" Remapping tcomment toggle key
+map <C-c> gcc
+
