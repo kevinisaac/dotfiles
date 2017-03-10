@@ -61,6 +61,7 @@ run_once({ "urxvtd", "unclutter -root" })
 -- }}}
 
 -- {{{ Variable definitions
+-- local chosen_theme = "vertex"
 local chosen_theme = "holo"
 local modkey       = "Mod4"
 local altkey       = "Mod1"

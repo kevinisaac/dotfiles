@@ -17,8 +17,10 @@ local theme                                     = {}
 theme.default_dir                               = require("awful.util").get_themes_dir() .. "default"
 theme.icon_dir                                  = os.getenv("HOME") .. "/.config/awesome/themes/holo/icons"
 theme.wallpaper                                 = os.getenv("HOME") .. "/.config/awesome/themes/holo/wall.png"
-theme.font                                      = "Roboto Bold 10"
-theme.taglist_font                              = "Roboto Condensed Regular 8"
+-- theme.font                                      = "Roboto Bold 10"
+theme.font                                      = "Inconsolata for Powerline Bold 10"
+theme.taglist_font                              = "Inconsolata for Powerline Bold 10"
+-- theme.taglist_font                              = "Roboto Condensed Regular 8"
 theme.fg_normal                                 = "#FFFFFF"
 theme.fg_focus                                  = "#0099CC"
 theme.bg_focus                                  = "#303030"
@@ -163,6 +165,8 @@ theme.mpd = lain.widget.mpd({
                               mpd_now.title .. "  ") .. markup.font("Roboto 5", " "))
             play_pause_icon:set_image(theme.pause)
         elseif mpd_now.state == "pause" then
+            mpd_now.artist = mpd_now.artist:upper():gsub("&.-;", string.lower)
+            mpd_now.title = mpd_now.title:upper():gsub("&.-;", string.lower)
             widget:set_markup(markup.font("Roboto 4", " ") ..
                               markup.font(theme.taglist_font, " MPD PAUSED  ") ..
                               markup.font("Roboto 5", " "))
