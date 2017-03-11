@@ -16,6 +16,7 @@ set autowrite
 set number                                  " sets the line number
 set relativenumber                          " sets the relative line number
 set nocp                                    " omnicpp installation
+set mouse=a
 
 " Set no backup or swapfile
 set nobackup
@@ -37,7 +38,7 @@ filetype indent on
 
 " syntax options
 set t_Co=256
-set background=light
+" set background=dark
 syntax enable
 " syntax clear - disable syntax highlighting for a moment
 " syntax off - disable syntax highlighting permanently
@@ -60,9 +61,6 @@ hi CursorLine cterm=bold ctermbg=234
 au BufRead *.php set ft=php.html
 au BufNewFile *.php set ft=php.html
 
-" NERDTree snippets ----------------------------------------------------------------------------------------------------------------------------------------------------------------------
-" let g:NERDTreeWinPos = "right"
-
 " Editor ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 set tw=0
 set clipboard=unnamed
@@ -77,7 +75,7 @@ set clipboard=unnamed
 " autocmd VimEnter * NERDTree
 
 " Windows -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-autocmd BufEnter * silent! lcd %:p:h
+" autocmd BufEnter * silent! lcd %:p:h
 noremap ;a 10<c-w><c-w>
 noremap ;1  1<c-w><c-w>
 noremap ;2  2<c-w><c-w>
@@ -110,13 +108,13 @@ au BufRead,BufNewFile *.fish set filetype=fish
 " autocmd BufReadPre,FileReadPre * :IndentGuidesEnable
 
 " Indent Line plugin
-let g:indentLine_enabled = 1
-let g:indentLine_color_term = 237
+" let g:indentLine_enabled = 1
+" let g:indentLine_color_term = 237
 " let g:indentLine_char = 'c'
 
 " Python folding
 set foldmethod=indent
-set foldnestmax=2
+set foldnestmax=10
 noremap <Space> za
 noremap <NUL> zR
 
@@ -144,12 +142,16 @@ call plug#begin('~/.vim/plugged')
     Plug 'mattn/emmet-vim'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'tomtom/tcomment_vim'
+    Plug 'kien/ctrlp.vim'
     " Plug ''
 call plug#end()
 
 let g:user_emmet_expandabbr_key = '<C-X>'
 let g:user_emmet_togglecomment_key = '<C-V>'
 
+
+" Custom Vim commands
+command Evimrc :e ~/.vim/vimrc
 
 
 
@@ -167,11 +169,12 @@ inoremap <c-s> <Esc>:w<CR>
 noremap <c-q> <Esc>:q<CR>
 noremap <C-e> <Esc>:so ~/.vim/vimrc<CR>
 
-noremap <C-Up> :m -2<CR>
-noremap <C-Down> :m +1<CR>
+noremap <C-Up> ddkP
+noremap <C-Down> ddP
 
 " Emmet mapping
 
 " Remapping tcomment toggle key
 map <C-c> gcc
 
+" set background=dark
