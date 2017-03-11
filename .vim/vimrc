@@ -112,7 +112,7 @@ au BufRead,BufNewFile *.fish set filetype=fish
 " let g:indentLine_color_term = 237
 " let g:indentLine_char = 'c'
 
-" Python folding
+" Folding
 set foldmethod=indent
 set foldnestmax=10
 noremap <Space> za
@@ -138,17 +138,24 @@ call plug#begin('~/.vim/plugged')
     Plug 'Chiel92/vim-autoformat'
     Plug 'editorconfig/editorconfig-vim'
     Plug 'vim-airline/vim-airline'
-    Plug 'nathanaelkane/vim-indent-guides'
+    Plug 'Yggdroot/indentLine'
     Plug 'mattn/emmet-vim'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'tomtom/tcomment_vim'
-    Plug 'kien/ctrlp.vim'
+    Plug 'ctrlpvim/ctrlp.vim'
     " Plug ''
 call plug#end()
 
+" Emmet Plugin
 let g:user_emmet_expandabbr_key = '<C-X>'
 let g:user_emmet_togglecomment_key = '<C-V>'
 
+" indentLine Plugin
+let g:indentLine_color_term = 7
+
+" ctrlp.vim Plugin
+set shell=/bin/bash " Required if bash is not used as the user's shell
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
 " Custom Vim commands
 command Evimrc :e ~/.vim/vimrc

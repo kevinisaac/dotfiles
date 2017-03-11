@@ -10,8 +10,10 @@ set -x ttymouse xterm2
 
 # Set the key repeat rate
 xset r rate 160 60
+
 # Silence the irritating beep
 xset -b
+
 # Silence the blind laptop screen
 # xrandr --output LVDS-1 --off
 

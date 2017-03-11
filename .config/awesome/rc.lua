@@ -867,3 +867,6 @@ client.connect_signal("focus",
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 -- os.execute("xrandr --output LVDS-1 --off")
+
+-- Start mpd automatically
+os.execute('mpd')
