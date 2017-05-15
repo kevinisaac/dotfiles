@@ -135,15 +135,22 @@ let g:airline_theme="hogan"
 let g:ctrlp_cache_dir = $HOME . '/.cache/ctrlp'
 
 call plug#begin('~/.vim/plugged')
-    Plug 'Chiel92/vim-autoformat'
+    " Plug 'Chiel92/vim-autoformat'
     Plug 'editorconfig/editorconfig-vim'
+    Plug 'ctrlpvim/ctrlp.vim'           " The search plugin
+
+    Plug 'gaving/vim-textobj-argument'  " To treat arguments like objects
+    Plug 'tomtom/tcomment_vim'          " For toggling comment
+
     Plug 'vim-airline/vim-airline'
-    Plug 'Yggdroot/indentLine'
-    Plug 'mattn/emmet-vim'
     Plug 'vim-airline/vim-airline-themes'
-    Plug 'tomtom/tcomment_vim'
-    Plug 'ctrlpvim/ctrlp.vim'
-    " Plug ''
+    Plug 'Yggdroot/indentLine'          " The thin line along indentation
+
+    Plug 'mattn/emmet-vim'
+    Plug 'garbas/vim-snipmate'
+    Plug 'MarcWeber/vim-addon-mw-utils' " Dependency for snipmate
+    Plug 'tomtom/tlib_vim'              " Dependency for snipmate
+    Plug 'honza/vim-snippets'           " Optional dependency for snipmate
 call plug#end()
 
 " Emmet Plugin
@@ -158,7 +165,7 @@ set shell=/bin/bash " Required if bash is not used as the user's shell
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
 
 " Custom Vim commands
-command Evimrc :e ~/.vim/vimrc
+" command Evimrc :e ~/.vim/vimrc
 
 
 

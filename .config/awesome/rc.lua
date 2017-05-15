@@ -62,14 +62,16 @@ run_once({ "urxvtd", "unclutter -root" })
 
 -- {{{ Variable definitions
 -- local chosen_theme = "vertex"
-local chosen_theme = "holo"
-local modkey       = "Mod4"
-local altkey       = "Mod1"
-local terminal     = "urxvt" or "xterm"
-local editor       = os.getenv("EDITOR") or "vim" or "nano"
-local gui_editor   = "gvim"
-local browser      = "chromium" or "firefox"
-local file_manager = "xfe"
+local chosen_theme  = "holo"
+local modkey        = "Mod4"
+local altkey        = "Mod1"
+local terminal      = "urxvt" or "xterm"
+local editor        = os.getenv("EDITOR") or "vim" or "nano"
+local gui_editor    = "gvim"
+local browser       = "chromium" or "firefox"
+local file_manager  = "xfe"
+local screenshooter = "xfce4-screenshooter"
+local postman       = "~/Software/Postman/Postman"
 
 awful.util.terminal = terminal
 awful.util.tagnames = { " ♠ Web ", " 😂 Hangouts ", " ❆ Video ", " ☕ Terminal ", " ♬ Music " }
@@ -214,7 +216,7 @@ root.buttons(awful.util.table.join(
 globalkeys = awful.util.table.join(
     -- Take a screenshot
     -- https://github.com/copycat-killer/dots/blob/master/bin/screenshot
-    awful.key({ altkey }, "p", function() os.execute("screenshot") end),
+    -- awful.key({ altkey }, "p", function() os.execute("screenshot") end),
 
     -- Hotkeys
     awful.key({ modkey,           }, "s",      hotkeys_popup.show_help,
@@ -426,6 +428,7 @@ globalkeys = awful.util.table.join(
     -- User programs
     awful.key({ modkey }, "e", function () awful.spawn(gui_editor) end),
     awful.key({ modkey }, "q", function () awful.spawn(browser) end),
+    awful.key({ modkey }, "p", function () awful.spawn(screenshooter) end),
 
     -- Default
     --[[ Menubar

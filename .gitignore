@@ -1,2 +1,6 @@
-*.swp
+venv
 node_modules
+
+*.pyc
+*.log
+*.swp
