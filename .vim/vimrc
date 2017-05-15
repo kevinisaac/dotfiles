@@ -184,7 +184,7 @@ noremap <c-q> <Esc>:q<CR>
 noremap <C-e> <Esc>:so ~/.vim/vimrc<CR>
 
 noremap <C-Up> ddkP
-noremap <C-Down> ddP
+noremap <C-Down> ddp
 
 " Emmet mapping
 
