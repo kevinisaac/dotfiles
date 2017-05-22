@@ -24,6 +24,12 @@ end
 # Load fishmarks (http://github.com/techwizrd/fishmarks)
 . $HOME/.fishmarks/marks.fish
 
+function startterminology
+    cd /home/kevin/Code/terminology
+    . venv/bin/activate.fish
+    python run.py
+end
+
 function startzucumber
     cd /home/kevin/Code/zucumber
     . venv/bin/activate.fish

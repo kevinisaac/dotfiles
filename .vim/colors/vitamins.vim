@@ -23,12 +23,12 @@ endif
 
 " General colors
 hi Cursor 		guifg=NONE    guibg=#656565 gui=none ctermbg=2
-hi Normal 		guifg=#f6f3f0 guibg=#242424 gui=none ctermfg=254 ctermbg=233
+hi Normal 		guifg=#f6f3f0 guibg=#242424 gui=none ctermfg=248 ctermbg=233
 hi NonText 		guifg=#808080 guibg=#303030 gui=none ctermfg=242 ctermbg=233
 hi LineNr 		guifg=#5c5a4f guibg=#000000 gui=none ctermfg=239 ctermbg=233
 hi StatusLine 	guifg=#f6f3e8 guibg=#444444 gui=italic ctermfg=239 ctermbg=233
 hi StatusLineNC guifg=#857b6f guibg=#444444 gui=none
-hi VertSplit 	guifg=#444444 guibg=#444444 gui=none 
+hi VertSplit 	guifg=#444444 guibg=#444444 gui=none
 hi Folded 		guibg=#2d2d2d guifg=#a0a8b0 gui=none ctermfg=none ctermbg=234
 hi Title		guifg=#f6f3e8 guibg=NONE	gui=bold 
 hi Visual		guifg=#ffffd7 guibg=#444444 gui=none ctermfg=186 ctermbg=238

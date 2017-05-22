@@ -46,33 +46,12 @@ colorscheme vitamins
 set cursorline
 hi CursorLine cterm=bold ctermbg=234
 
-" configure tags - add additional tags here or comment out not-used ones
-"set tags+=~/.vim/tags/cpp
-"set tags+=~/.vim/tags/gl
-"set tags+=~/.vim/tags/sdl
-"set tags+=~/.vim/tags/qt4
-" build tags of your own project with Ctrl-F12
-"map <C-F12> :!ctags -R --sort=yes --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
-
-" automatically open and close the popup menu / preview window
-"au CursorMovedI,InsertLeave * if pumvisible() == 0|silent! pclose|endif
-"set completeopt=menuone,menu,longest,preview
-
 au BufRead *.php set ft=php.html
 au BufNewFile *.php set ft=php.html
 
 " Editor ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 set tw=0
 set clipboard=unnamed
-
-" Session in vim -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-" Save session on quitting Vim
-" autocmd VimLeave * NERDTreeClose
-" autocmd VimLeave * mksession! [filename]
-
-" Restore session on starting Vim
-" autocmd VimEnter * call MySessionRestoreFunction()
-" autocmd VimEnter * NERDTree
 
 " Windows -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 " autocmd BufEnter * silent! lcd %:p:h
@@ -97,22 +76,13 @@ autocmd Filetype html,css,xml :setlocal sw=2 ts=2 sts=2
 au BufNewFile,BufRead *.jade set filetype=html
 autocmd BufRead,BufNewFile *.jade setlocal ft=jade
 au BufRead,BufNewFile *.fish set filetype=fish
+" au BufRead,BufNewFile *.jinja set filetype=jinja.html
 
 " Autosave CSS file
 " autocmd  TextChanged,TextChangedI <buffer> silent write
 
-" Vim indent guides
-" let g:indent_guides_auto_colors = 0
-" autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=233
-" autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=234
-" autocmd BufReadPre,FileReadPre * :IndentGuidesEnable
-
-" Indent Line plugin
-" let g:indentLine_enabled = 1
-" let g:indentLine_color_term = 237
-" let g:indentLine_char = 'c'
-
 " Folding
+" set foldmethod=manual
 set foldmethod=indent
 set foldnestmax=10
 noremap <Space> za
@@ -138,6 +108,8 @@ call plug#begin('~/.vim/plugged')
     " Plug 'Chiel92/vim-autoformat'
     Plug 'editorconfig/editorconfig-vim'
     Plug 'ctrlpvim/ctrlp.vim'           " The search plugin
+    Plug 'xolox/vim-session'            " Session manager
+    Plug 'xolox/vim-misc'               " Dependency for Session manager
 
     Plug 'gaving/vim-textobj-argument'  " To treat arguments like objects
     Plug 'tomtom/tcomment_vim'          " For toggling comment
@@ -151,6 +123,10 @@ call plug#begin('~/.vim/plugged')
     Plug 'MarcWeber/vim-addon-mw-utils' " Dependency for snipmate
     Plug 'tomtom/tlib_vim'              " Dependency for snipmate
     Plug 'honza/vim-snippets'           " Optional dependency for snipmate
+    Plug 'tpope/vim-surround'
+    Plug 'jiangmiao/auto-pairs'         " Pair ', \", {, [ and (
+
+    Plug 'Glench/Vim-Jinja2-Syntax'
 call plug#end()
 
 " Emmet Plugin
@@ -163,6 +139,9 @@ let g:indentLine_color_term = 7
 " ctrlp.vim Plugin
 set shell=/bin/bash " Required if bash is not used as the user's shell
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+
+" Vim sessions
+let g:session_autosave = 'no'
 
 " Custom Vim commands
 " command Evimrc :e ~/.vim/vimrc
