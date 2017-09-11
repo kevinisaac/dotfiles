@@ -142,6 +142,7 @@ let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standar
 
 " Vim sessions
 let g:session_autosave = 'no'
+let g:session_autoload = 'no'
 
 " Custom Vim commands
 " command Evimrc :e ~/.vim/vimrc
