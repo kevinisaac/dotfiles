@@ -6,7 +6,7 @@ URxvt*font:             xft:Inconsolata\ for\ Powerline:pixelsize=15
 URxvt*boldFont:         xft:Inconsolata\ for\ Powerline:bold:pixelsize=15
 URxvt*scrollBar:        false
 URxvt.perl-ext-common:  default,matcher
-URxvt.url-launcher:     firefox
+URxvt.url-launcher:     chromium
 URxvt.matcher.button:   1
 URxvt.internalBorder:   10
 /* URxvt.lineSpace:        1 */

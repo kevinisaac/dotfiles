@@ -74,6 +74,7 @@
 		git log --oneline $b..pr/$1; \
 		git update-ref -d refs/PR_MERGE_HEAD; \
 		}; f"
+    acu = "!git add .; git commit"
 [instaweb]
 	httpd=webrick
 [push]
@@ -92,3 +93,7 @@
     path = vim
 [mergetool]
 	path = vim
+
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master

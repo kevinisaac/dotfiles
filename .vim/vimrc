@@ -72,7 +72,7 @@ noremap ;9  9<c-w><c-w>
 " execute pathogen#infect()
 
 " Set filetype tab spaces
-autocmd Filetype html,css,xml :setlocal sw=2 ts=2 sts=2
+autocmd Filetype html,css,xml,jinja,less :setlocal sw=2 ts=2 sts=2
 au BufNewFile,BufRead *.jade set filetype=html
 autocmd BufRead,BufNewFile *.jade setlocal ft=jade
 au BufRead,BufNewFile *.fish set filetype=fish
@@ -84,7 +84,7 @@ au BufRead,BufNewFile *.fish set filetype=fish
 " Folding
 " set foldmethod=manual
 set foldmethod=indent
-set foldnestmax=10
+set foldnestmax=20
 noremap <Space> za
 noremap <NUL> zR
 

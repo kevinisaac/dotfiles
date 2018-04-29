@@ -22,6 +22,10 @@ if status --is-login
     end
 end
 
+# For an empty fish greeting
+function fish_greeting
+end
+
 # Shortcut for Systemctl commands
 function sstart
     sudo systemctl start $argv
