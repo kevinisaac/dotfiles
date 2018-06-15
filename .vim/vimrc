@@ -85,7 +85,7 @@ set clipboard=unnamed
 " Folding
 " set foldmethod=manual
 set foldmethod=indent
-set foldnestmax=8
+set foldnestmax=6
 noremap <Space> za
 noremap <NUL> zR
 
@@ -109,22 +109,22 @@ call plug#begin('~/.vim/plugged')
     " Plug 'Chiel92/vim-autoformat'
     Plug 'editorconfig/editorconfig-vim'
     Plug 'ctrlpvim/ctrlp.vim'           " The search plugin
-    Plug 'xolox/vim-session'            " Session manager
-    Plug 'xolox/vim-misc'               " Dependency for Session manager
+    " Plug 'xolox/vim-session'            " Session manager
+    " Plug 'xolox/vim-misc'               " Dependency for Session manager
 
-    Plug 'gaving/vim-textobj-argument'  " To treat arguments like objects
+    " Plug 'gaving/vim-textobj-argument'  " To treat arguments like objects
     Plug 'tomtom/tcomment_vim'          " For toggling comment
 
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
     Plug 'Yggdroot/indentLine'          " The thin line along indentation
 
-    Plug 'mattn/emmet-vim'
+    " Plug 'mattn/emmet-vim'
     Plug 'garbas/vim-snipmate'
     Plug 'MarcWeber/vim-addon-mw-utils' " Dependency for snipmate
     Plug 'tomtom/tlib_vim'              " Dependency for snipmate
     Plug 'honza/vim-snippets'           " Optional dependency for snipmate
-    Plug 'tpope/vim-surround'
+    " Plug 'tpope/vim-surround'
     Plug 'jiangmiao/auto-pairs'         " Pair ', \", {, [ and (
 
     Plug 'Glench/Vim-Jinja2-Syntax'

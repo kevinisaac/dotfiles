@@ -79,6 +79,7 @@
 	httpd=webrick
 [push]
 	default=current
+    followTags=true
 [diff]
 	algorithm = patience
 	tool = vimdiff3
