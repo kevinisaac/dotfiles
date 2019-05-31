@@ -1,6 +1,6 @@
 venv
 node_modules
-.config/chromium
+.config/chromium/*
 
 *.pyc
 *.log
