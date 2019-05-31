@@ -1,0 +1,17 @@
+{
+   "app": {
+      "launch": {
+         "web_url": "http://www.printedowl.com/Calendar.aspx?id=business_management"
+      },
+      "urls": [ "http://www.printedowl.com/Calendar.aspx?id=business_management" ]
+   },
+   "description": "Business and management tips, terms, facts, websites, history, events and knowledge.",
+   "icons": {
+      "128": "128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqitXVMKRl1jQ3af6ii+QsZSwhpaNWnQViCuDN4RlyvGrzjAMCeleyasDFSuahHNchaj1+GrPpx9+WjdgvzfdgFIf5tgdMeKKCfM904TbhYZStEL5lkjEonrYk/CbdCPD0U1z9Bb3oxEzvPbSbcoSMMnyzvCwFZiys/WoqF0L17N0WT3o80bH0lBlAt8erakgDNEkQcs7VGM2kKJTjK15FVrq2ivHFrPmejTp1YihIzBnBkhUR79jqN3pbhWlE9KHfDRmDpVU5/YCAH/vdD3BDGtKjk+vVo/d63IixqRCXi/QU51elHoru0F7JxBffLnHtC+W6ez4IPGFwczICIs7iwIDAQAB",
+   "manifest_version": 2,
+   "name": "Business and Management",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1"
+}

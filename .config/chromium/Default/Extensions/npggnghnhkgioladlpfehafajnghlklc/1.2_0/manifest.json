@@ -1,0 +1,38 @@
+{
+   "background": {
+      "page": "pages/background.html"
+   },
+   "browser_action": {
+      "default_icon": "images/icon19.png",
+      "default_popup": "pages/page_action.html",
+      "default_title": "Click here to quickly view translations for selected word."
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "css": [ "css/balloon.css" ],
+      "exclude_matches": [ "*://*.dictionarist.com/*" ],
+      "js": [ "js/jQueryUI/js/jquery-1.9.1.min.js", "js/balloon.js", "js/functions.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'; media-src https://app.dictionarist.com",
+   "default_locale": "en",
+   "description": "__MSG_appDesc__",
+   "homepage_url": "https://www.dictionarist.com/",
+   "icons": {
+      "128": "images/icon128.png",
+      "16": "images/icon16.png",
+      "48": "images/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAl8ioEcTH4sRBZxMa/DdSmh4uVCuzUvuCNQXbH57VZzBqM4TBIx/tNwjVVAmDuAaFv+ckPzpWMYJJi8QQLA2VpOVqpk6rw4c8akjVUIKAmSjwxO5fk/HpwTFsHguX248e0Z352s2VGa9BTmRjM139exsHrkc3KCKQQgMocMHra/wcRoKp9BhyWe9T+WbgyGWBFjRaeoe/3jSZvdVA73NGEP5R9vaHsykTJ+M9p0we/kCVpkbg/Xm/VdYGsm0e9j6YHxxpnRCLFL1CbFvsjeSFg0m7ly7zKoGs9S0sOZafhrd7PbBUmG+nxA77EljUYgCgM/az6vrojTSjtZ8tiox9LwIDAQAB",
+   "manifest_version": 2,
+   "name": "__MSG_appName__",
+   "omnibox": {
+      "keyword": "dictionarist"
+   },
+   "options_page": "pages/options.html",
+   "permissions": [ "http://*/*", "https://*/*", "contextMenus", "tabs", "tts" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.2",
+   "web_accessible_resources": [ "images/spinner.gif", "images/close.png", "pages/ga.html", "pages/options.html" ]
+}

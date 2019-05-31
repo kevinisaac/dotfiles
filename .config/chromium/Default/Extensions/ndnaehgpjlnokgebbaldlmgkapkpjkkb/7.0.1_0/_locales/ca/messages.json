@@ -1,0 +1,568 @@
+{
+   "activationModalCallToAction": {
+      "message": "Activar"
+   },
+   "activationModalDisclaimer": {
+      "message": "A l'activar Mailtrack, acceptes els"
+   },
+   "activationModalDoNotUse": {
+      "message": "No utilitzar MailTack"
+   },
+   "activationModalRemindLater": {
+      "message": "Recordar més tard"
+   },
+   "activationModalTerms": {
+      "message": "termes d'ús"
+   },
+   "activationModalTermsUrl": {
+      "message": "http://mailtrack.io/ca/terms"
+   },
+   "activationModalText": {
+      "message": "Activar tracking d'emails per a $EMAIL$",
+      "placeholders": {
+         "EMAIL": {
+            "content": "$1"
+         }
+      }
+   },
+   "active": {
+      "message": "Actiu"
+   },
+   "appDescription": {
+      "message": "Mail tracking gratuït per sempre i il·limitat. Afegeix el doble-check ✓✓ al teu Gmail."
+   },
+   "appName": {
+      "message": "Email tracking per a Gmail - Mailtrack"
+   },
+   "browserSignUpPopupExplanation": {
+      "message": "Mailtrack està instal·lat però és necessari registrar-se per habilitar el tracking d'emails."
+   },
+   "browserSignUpPopupTitle": {
+      "message": "Registre necessari"
+   },
+   "closingTabMessage": {
+      "message": "El teu missatge podria no tenir seguiment."
+   },
+   "composerToolEmailNotificationTooltipTextDisable": {
+      "message": "Desactivar les notificacions per correu"
+   },
+   "composerToolEmailNotificationTooltipTextDisabled": {
+      "message": "Les alertes per correu necessiten el seguiment de correu"
+   },
+   "composerToolEmailNotificationTooltipTextEnable": {
+      "message": "Activar les notificacions per correu"
+   },
+   "composerToolEmailTrackingTooltipTextDisable": {
+      "message": "Desactivar el seguiment del correu"
+   },
+   "composerToolEmailTrackingTooltipTextEnable": {
+      "message": "Activar el seguiment del correu"
+   },
+   "currentlyDisabledFor": {
+      "message": "Mailtrack està desactivada per a"
+   },
+   "days": {
+      "message": "dies"
+   },
+   "debeconiserFailedModalButtonText": {
+      "message": "OK"
+   },
+   "debeconiserFailedModalText": {
+      "message": "Sisplau recarrega la pàgina."
+   },
+   "debeconiserFailedModalTitle": {
+      "message": "La teva resposta ha estat enviada però no es pot mostrar"
+   },
+   "demoModeModalButtonText": {
+      "message": "Acceptar"
+   },
+   "demoModeModalTitle": {
+      "message": "Mailtrack es desactiva per als correus que t'envies a tu mateix."
+   },
+   "desktopNotificationClickMultipleRecipientsTemplate": {
+      "message": "✓✓ Un enllaç ha estat clicat"
+   },
+   "desktopNotificationClickMultipleRecipientsUsingDeviceTemplate": {
+      "message": "✓✓ Un enllaç ha estat clicat emprant $device$",
+      "placeholders": {
+         "device": {
+            "content": "$1",
+            "example": "Gmail"
+         }
+      }
+   },
+   "desktopNotificationClickMuteAllNotificationsButtonText": {
+      "message": "Silenciar tots els clics"
+   },
+   "desktopNotificationClickSingleRecipientTemplate": {
+      "message": "✓✓ $who$ ha fet clic a un enllaç",
+      "placeholders": {
+         "who": {
+            "content": "$1",
+            "example": "sample@example.com"
+         }
+      }
+   },
+   "desktopNotificationClickSingleRecipientUsingDeviceTemplate": {
+      "message": "✓✓ $who$ ha fet clic a un enllaç emprant $device$",
+      "placeholders": {
+         "device": {
+            "content": "$2",
+            "example": "iPhone"
+         },
+         "who": {
+            "content": "$1",
+            "example": "sample@example.com"
+         }
+      }
+   },
+   "desktopNotificationMuteThreadButtonText": {
+      "message": "Silenciar aquesta conversa"
+   },
+   "desktopNotificationOpenMultipleRecipientsTemplate": {
+      "message": "✓✓ El teu email ha estat llegit"
+   },
+   "desktopNotificationOpenMultipleRecipientsUsingDeviceTemplate": {
+      "message": "✓✓ El teu email ha estat llegit emprant $device$",
+      "placeholders": {
+         "device": {
+            "content": "$1",
+            "example": "Gmail"
+         }
+      }
+   },
+   "desktopNotificationOpenMuteAllNotificationsButtonText": {
+      "message": "Silenciar totes les notificacions"
+   },
+   "desktopNotificationOpenSingleRecipientTemplate": {
+      "message": "✓✓ $who$ ha llegit el teu email",
+      "placeholders": {
+         "who": {
+            "content": "$1",
+            "example": "sample@example.com"
+         }
+      }
+   },
+   "desktopNotificationOpenSingleRecipientUsingDeviceTemplate": {
+      "message": "✓✓ $who$ ha llegit el teu email emprant $device$",
+      "placeholders": {
+         "device": {
+            "content": "$2",
+            "example": "iPhone"
+         },
+         "who": {
+            "content": "$1",
+            "example": "sample@example.com"
+         }
+      }
+   },
+   "disabling": {
+      "message": "Desactivant Mailtrack..."
+   },
+   "enableButtonText": {
+      "message": "ACTIVAR"
+   },
+   "enabling": {
+      "message": "Activant Mailtrack..."
+   },
+   "expandBtnMsg": {
+      "message": "Clica per veure la informació de tracking"
+   },
+   "feedbackSubject": {
+      "message": "[ASSISTÈNCIA] Problema amb Mailtrack"
+   },
+   "forBrowser": {
+      "message": "per a $browser$",
+      "placeholders": {
+         "browser": {
+            "content": "$1",
+            "example": "Chrome"
+         }
+      }
+   },
+   "genericError": {
+      "message": "⚠ \u003Cbr />\u003Cbr />Alguna cosa ha anat malament\u003Cbr />\u003Cbr />Si us plau, prova-ho més tard"
+   },
+   "gettingStartedUrl": {
+      "message": "https://mailtrack.io/en/getting-started?login_hint=$email$",
+      "placeholders": {
+         "email": {
+            "content": "$1",
+            "example": "john.doe@mailtrack.io"
+         }
+      }
+   },
+   "hours": {
+      "message": "hores"
+   },
+   "iFrameFallbackText": {
+      "message": "Si el problema persisteix, si us plau contacta'ns a \u003Ca mailto=\"feedback@mailtrack.io\">feedback@mailtrack.io\u003C/a>"
+   },
+   "iFrameFallbackTitle": {
+      "message": "Ups! S'ha trencat..."
+   },
+   "incompatibleExtensionDoNotShow": {
+      "message": "No tornis a recordar-m'ho"
+   },
+   "incompatibleExtensionExplanation": {
+      "message": "Hem detectat que tens instal·lades una o més extensions \u003Cstrong>incompatibles\u003C/strong> amb Mailtrack."
+   },
+   "incompatibleExtensionStep1CallToAction": {
+      "message": "Anar a la configuració de les extensions"
+   },
+   "incompatibleExtensionStep1ListTitle": {
+      "message": "Extensions incompatibles:"
+   },
+   "incompatibleExtensionStep1Title": {
+      "message": "Desactiva o elimina les extensions incompatibles a les teves preferències"
+   },
+   "incompatibleExtensionStep2CallToAction": {
+      "message": "Recarrega Gmail"
+   },
+   "incompatibleExtensionStep2Title": {
+      "message": "Recarrega Gmail per veure els canvis"
+   },
+   "incompatibleExtensionTitle": {
+      "message": "Incompatibilitat detectada"
+   },
+   "incompatibleLabsDoNotShow": {
+      "message": "No tornis a recordar-m'ho"
+   },
+   "incompatibleLabsExplanation": {
+      "message": "Hem detectat que tens activades una o més funcions experimentals \u003Cstrong>incompatibles\u003C/strong> amb Mailtrack. Per a que Mailtrack funcioni correctament has de desactivar-les."
+   },
+   "incompatibleLabsName_previewPane": {
+      "message": "Subfinestra de visualització prèvia"
+   },
+   "incompatibleLabsStep1CallToAction": {
+      "message": "Anar a la configuració de Labs de Gmail"
+   },
+   "incompatibleLabsStep1ListTitle": {
+      "message": "Funcions incompatibles de Labs:"
+   },
+   "incompatibleLabsStep1Title": {
+      "message": "Desactiva les funcionalitats incompatibles a la configuració"
+   },
+   "incompatibleLabsTitle": {
+      "message": "Incompatibilitat detectada"
+   },
+   "installedMsgOk": {
+      "message": "D'acord"
+   },
+   "installedMsgText": {
+      "message": "Per a utilitzar Mailtrack, només has d'enviar correus com fas normalment."
+   },
+   "installedMsgTitle": {
+      "message": "Mailtrack està instal·lat"
+   },
+   "learnMore": {
+      "message": "més informació"
+   },
+   "mailtrackIsDisabled": {
+      "message": "Mailtrack desactivat"
+   },
+   "mailtrackIsEnabled": {
+      "message": "Mailtrack activat"
+   },
+   "markedAsActive": {
+      "message": "Marcat com a Actiu perquè\u003Cbr />s'ha obert / respost\u003Cbr />fa menys d'una hora."
+   },
+   "minutes": {
+      "message": "minuts"
+   },
+   "modalTitleBodyButtonCancelText": {
+      "message": "Cancel·lar"
+   },
+   "mustReloadPermissionsOptions1": {
+      "message": "Has modificat la contrasenya de Gmail."
+   },
+   "mustReloadPermissionsOptions2": {
+      "message": "Has modificat els permisos de Mailtrack."
+   },
+   "mustReloadPermissionsOptions3": {
+      "message": "Si utilitzes GSuite, pot ser que el seu administrador hagi deshabilitat els permisos de Mailtrack."
+   },
+   "mustReloadPermissionsText": {
+      "message": "Arran d'alguna modificació, Gmail ha de ser recarregat:"
+   },
+   "mustReloadPermissionsTitle": {
+      "message": "És necessari recarregar"
+   },
+   "mustReloadText": {
+      "message": "Degut a alguns canvis la pàgina de Gmail s'ha de recarregar"
+   },
+   "mustReloadTitle": {
+      "message": "Recarregar pàgina"
+   },
+   "mustReloadbuttonPermissionsText": {
+      "message": "OK"
+   },
+   "mustReloadbuttonText": {
+      "message": "OK"
+   },
+   "openSettingsButtonText": {
+      "message": "Ves a les preferències de Mailtrack"
+   },
+   "plainTextModeModalButtonText": {
+      "message": "Acceptar"
+   },
+   "plainTextModeModalLinkText": {
+      "message": "No mostrar de nou"
+   },
+   "plainTextModeModalText": {
+      "message": "Mailtrack no funciona en mode de text sense format i els teus correus no tindran seguiment."
+   },
+   "plainTextModeModalTitle": {
+      "message": "Mailtrack no funciona en mode de text sense format"
+   },
+   "plainTextSupportModalButtonText": {
+      "message": "OK"
+   },
+   "plainTextSupportModalText": {
+      "message": "Desactiva el mode de text sense format per a que Mailtrack funcioni (\u003Ca target=\"_blank\" href=\"https://mailtrack.desk.com/customer/es_es/portal/articles/1830586-does-tracking-work-in-plain-text-mode-\">com?\u003C/a>)."
+   },
+   "plainTextSupportModalTitle": {
+      "message": "Mailtrack no funciona amb text sense format"
+   },
+   "receivedMessageIncludesTracking": {
+      "message": "Aquest missatge rebut té email tracking"
+   },
+   "removeSignatureText": {
+      "message": "ELIMINAR"
+   },
+   "removeSignatureTitle": {
+      "message": "Eliminar la signatura de Mailtrack"
+   },
+   "requestPermissionsButtonText": {
+      "message": "Acceptar"
+   },
+   "requestPermissionsText": {
+      "message": "A causa dels canvis en el nou Gmail, Mailtrack necessita que actualitzis els teus permisos"
+   },
+   "requestPermissionsTitle": {
+      "message": "Permisos necessaris"
+   },
+   "sendWithTccMailTrack": {
+      "message": "El missatge s'ha enviat i trackejat amb Mailtrack."
+   },
+   "senderNotifiedSignatureText": {
+      "message": "Remitent notificat amb"
+   },
+   "sentWithSignatureText": {
+      "message": "Enviat amb"
+   },
+   "serverAlertPopupButtonText": {
+      "message": "OK"
+   },
+   "serverAlertPopupTitle": {
+      "message": "Alerta"
+   },
+   "settingsOption_account": {
+      "message": "Compte"
+   },
+   "settingsOption_clickReport": {
+      "message": "Informe de clics"
+   },
+   "settingsOption_clickReport_upgrade": {
+      "message": "Per accedir a l'informe de clicks has d'actualitzar a Mailtrack Pro."
+   },
+   "settingsOption_dashboard": {
+      "message": "Panell d'activitat"
+   },
+   "settingsOption_dashboardLastopened": {
+      "message": "Emails oberts"
+   },
+   "settingsOption_dashboardLastopened_upgrade": {
+      "message": "Per accedir al Panell d'emails oberts has d'actualitzar a Mailtrack Pro."
+   },
+   "settingsOption_dashboardUnopened": {
+      "message": "Emails sense obrir"
+   },
+   "settingsOption_dashboardUnopened_upgrade": {
+      "message": "Per accedir al Panell d'emails sense obrir has d'actualitzar a Mailtrack Pro."
+   },
+   "settingsOption_dashboard_upgrade": {
+      "message": "Per accedir al Panell d'actividad has d'actualitzar a Mailtrack Pro."
+   },
+   "settingsOption_faqs": {
+      "message": "Ajuda"
+   },
+   "settingsOption_pricing": {
+      "message": "Plans i Preus"
+   },
+   "settingsOption_settings": {
+      "message": "Configuració"
+   },
+   "settingsOption_support": {
+      "message": "Contacte"
+   },
+   "settingsOption_upgrade": {
+      "message": "Actualitzar a Mailtrack Pro"
+   },
+   "signInWithGoogle": {
+      "message": "Registre amb Google"
+   },
+   "signatureTooltipCancel": {
+      "message": "Ocultar"
+   },
+   "signatureTooltipMessage": {
+      "message": "Elimina aquesta signatura publicitària per sempre dels teus correus professionals."
+   },
+   "signatureTooltipOk": {
+      "message": "Plans & preus"
+   },
+   "tooltipByOpener": {
+      "message": " per $OPENER$ ",
+      "placeholders": {
+         "OPENER": {
+            "content": "$1"
+         }
+      }
+   },
+   "tooltipClick": {
+      "message": " - Click a $URL$ ",
+      "placeholders": {
+         "URL": {
+            "content": "$1"
+         }
+      }
+   },
+   "tooltipDemoMode": {
+      "message": "Mailtrack es desactiva per correus enviats a tu mateix"
+   },
+   "tooltipFailed": {
+      "message": "La càrrega ha fallat. Si us plau torna-ho a provar"
+   },
+   "tooltipFirstRead": {
+      "message": "Primera lectura "
+   },
+   "tooltipLastWordVariant": {
+      "message": "darrer"
+   },
+   "tooltipLoading": {
+      "message": "Carregant..."
+   },
+   "tooltipNotTraced": {
+      "message": "Enviat des d'un dispositiu sense Mailtrack"
+   },
+   "tooltipOpenMoreThan1000Times": {
+      "message": "Aquest e-mail s’ha obert més de 1000 vegades; no és possible mostrar l’històric d’obertures en detall"
+   },
+   "tooltipOpenTimes": {
+      "message": " $TIMES$ vegades ",
+      "placeholders": {
+         "TIMES": {
+            "content": "$1"
+         }
+      }
+   },
+   "tooltipRead": {
+      "message": " - Llegit "
+   },
+   "tooltipReadYourEmail": {
+      "message": " ha llegit el teu $LAST$ missatge ",
+      "placeholders": {
+         "LAST": {
+            "content": "$1"
+         }
+      }
+   },
+   "tooltipTimeAfterYouSent": {
+      "message": " $TIME$ després d'enviar-ho ",
+      "placeholders": {
+         "TIME": {
+            "content": "$1"
+         }
+      }
+   },
+   "tooltipTimeAgo": {
+      "message": " fa $TIME$ ",
+      "placeholders": {
+         "TIME": {
+            "content": "$1"
+         }
+      }
+   },
+   "tooltipTracedManyRecipients": {
+      "message": "El teu $LAST$ missatge encara no ha estat llegit",
+      "placeholders": {
+         "LAST": {
+            "content": "$1"
+         }
+      }
+   },
+   "tooltipTracedOneRecipient": {
+      "message": "$RECIPIENT$ encara no ha llegit el teu $LAST$ missatge",
+      "placeholders": {
+         "LAST": {
+            "content": "$2"
+         },
+         "RECIPIENT": {
+            "content": "$1"
+         }
+      }
+   },
+   "tooltipTrackingDisabled": {
+      "message": "Tracking desactivat"
+   },
+   "tooltipUnlockHistoryTracking": {
+      "message": "Activar tota l'activitat de l'email"
+   },
+   "tooltipUnreliableRecipient": {
+      "message": "Atenció: Pot ser que el servei de correu de $RECIPIENT$ no permeti el trackeig de correus.\u003Cbr />L'estat d'obertura pot ser poc fiable. \u003Ca class=\"mt-tooltip-link\" target=\"_blank\" href=\"$LINK$\">Detalls\u003C/a>.",
+      "placeholders": {
+         "LINK": {
+            "content": "$2"
+         },
+         "RECIPIENT": {
+            "content": "$1"
+         }
+      }
+   },
+   "tooltipUsingPlatform": {
+      "message": " a través de $PLATFORM$ ",
+      "placeholders": {
+         "platform": {
+            "content": "$1"
+         }
+      }
+   },
+   "tooltipYourEmailWasRead": {
+      "message": "El teu $LAST$ missatge ha estat llegit ",
+      "placeholders": {
+         "LAST": {
+            "content": "$1"
+         }
+      }
+   },
+   "topBarUpdatePermissionsButton": {
+      "message": "Actualitzar permisos"
+   },
+   "topBarUpdatePermissionsText": {
+      "message": "Estem millorant Mailtrack. Si us plau, assegura't que el teu compte està a punt."
+   },
+   "trackReplyDoTrack": {
+      "message": "Monitoritzar resposta"
+   },
+   "trackReplySuccessMessage": {
+      "message": "Mailtrack us notificarà després de 24 hores si no es rep una resposta"
+   },
+   "trackingToolTooltipText": {
+      "message": "Eines de Mailtrack"
+   },
+   "typicallyRepliesToYouWithin": {
+      "message": "Sol respondre't en"
+   },
+   "understood": {
+      "message": "entesos"
+   },
+   "uninstallUrl": {
+      "message": "https://mailtrack.io/ca/goodbye"
+   },
+   "upgrade": {
+      "message": "Actualitzar"
+   },
+   "upgrade_now": {
+      "message": "Actualitzar ara"
+   }
+}

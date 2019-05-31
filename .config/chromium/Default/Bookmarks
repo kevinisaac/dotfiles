@@ -1,0 +1,1118 @@
+{
+   "checksum": "45a378ea5137058434a66d6154fa695b",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "children": [ {
+               "date_added": "13166941082482130",
+               "id": "126",
+               "meta_info": {
+                  "last_visited_desktop": "13189765222874477"
+               },
+               "name": "Tasks | Trello",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://trello.com/b/YwfHkzow/daily-tasks"
+            }, {
+               "date_added": "13166941078913958",
+               "id": "127",
+               "meta_info": {
+                  "last_visited_desktop": "13202046525332174"
+               },
+               "name": "Glen & Kevin tasks | Trello",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://trello.com/b/XcJ0wZZj/glen-kevin-tasks"
+            }, {
+               "date_added": "13168167836762488",
+               "id": "128",
+               "meta_info": {
+                  "last_visited_desktop": "13195625148948065"
+               },
+               "name": "Team Tasks | Trello",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://trello.com/b/VMSawjqy/team-tasks"
+            }, {
+               "date_added": "13177004900538599",
+               "id": "129",
+               "meta_info": {
+                  "last_visited_desktop": "13180634077265267"
+               },
+               "name": "* Legal questions | Trello",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://trello.com/b/NwrcRIkO/legal-questions"
+            } ],
+            "date_added": "13203720312462610",
+            "date_modified": "13203720312462610",
+            "id": "23",
+            "name": "Trello",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "date_added": "13180639058137007",
+            "id": "24",
+            "meta_info": {
+               "last_visited_desktop": "13181839332969013"
+            },
+            "name": "Zephony - Calendar - September 2018",
+            "sync_transaction_version": "5",
+            "type": "url",
+            "url": "https://calendar.google.com/calendar/r/month/2018/9/1"
+         }, {
+            "children": [ {
+               "date_added": "13179390750318400",
+               "id": "123",
+               "meta_info": {
+                  "last_visited_desktop": "13203003385937194"
+               },
+               "name": "State Bank of India - Personal Banking",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://retail.onlinesbi.com/retail/login.htm"
+            }, {
+               "date_added": "13174821476923612",
+               "id": "124",
+               "meta_info": {
+                  "last_visited_desktop": "13203375659056656"
+               },
+               "name": "Internet Banking Login",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://cibnext.icicibank.com/corp/AuthenticationController?FORMSGROUP_ID__=AuthenticationFG&__START_TRAN_FLAG__=Y&FG_BUTTONS__=LOAD&ACTION.LOAD=Y&AuthenticationFG.LOGIN_FLAG=1&BANK_ID=ICI"
+            }, {
+               "date_added": "13180368336094416",
+               "id": "125",
+               "meta_info": {
+                  "last_visited_desktop": "13203375758402048"
+               },
+               "name": "SBI card - Login",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.sbicard.com/creditcards/app/user/login"
+            } ],
+            "date_added": "13203720312463085",
+            "date_modified": "13203720312463085",
+            "id": "25",
+            "name": "Banking",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13173683917632398",
+               "id": "114",
+               "meta_info": {
+                  "last_visited_desktop": "13202072762317753"
+               },
+               "name": "Companies - Google Sheets",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://docs.google.com/spreadsheets/d/1ict8CzHcWqQ1d2NFkL2wrgsd-o-Ou_3Fo-ew0-Lkahc/edit#gid=0"
+            }, {
+               "date_added": "13179396533981180",
+               "id": "115",
+               "meta_info": {
+                  "last_visited_desktop": "13194678453057411"
+               },
+               "name": "Credit card transactions - Company expenses - Google Sheets",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://docs.google.com/spreadsheets/d/1U-_h8w3ZZSmjfXLhkOqBCOo9dWholHPBv4kwWVEM1ZQ/edit#gid=0"
+            }, {
+               "date_added": "13179477927117565",
+               "id": "116",
+               "meta_info": {
+                  "last_visited_desktop": "13194705505993643"
+               },
+               "name": "Zephony - Customer relationship management - Google Sheets",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://docs.google.com/spreadsheets/d/124V9vKmnbROEdxWJnxGcObxDT9uxHZxo3rkECDPIeJk/edit#gid=1572532020"
+            }, {
+               "children": [ {
+                  "date_added": "13180261317684434",
+                  "id": "119",
+                  "meta_info": {
+                     "last_visited_desktop": "13195151144992624"
+                  },
+                  "name": "Payslip - Rex - Google Sheets",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://docs.google.com/spreadsheets/d/1ECtGtOQRKSKhcMEQovq9UJQPXB_KzQ5tDQtNFzAgrOo/edit#gid=0"
+               }, {
+                  "date_added": "13180261342226521",
+                  "id": "120",
+                  "meta_info": {
+                     "last_visited_desktop": "13197381272050406"
+                  },
+                  "name": "Payslip - Cyber - Google Sheets",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://docs.google.com/spreadsheets/d/1_hJzbW91fexILqeffaK69hatWX-C-N2gOAH-x1eoPVA/edit#gid=0"
+               }, {
+                  "date_added": "13182877984926784",
+                  "id": "121",
+                  "meta_info": {
+                     "last_visited_desktop": "13203457713665614"
+                  },
+                  "name": "Payslip - Kevin - Google Sheets",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://docs.google.com/spreadsheets/d/1QM8UvTzu8noJ6SpZEhN8KVqjC7gv1RzoEUatq5kNA5c/edit?ouid=101844194471807192240&usp=sheets_home&ths=true"
+               }, {
+                  "date_added": "13182877991163679",
+                  "id": "122",
+                  "meta_info": {
+                     "last_visited_desktop": "13201106971833069"
+                  },
+                  "name": "Payslip - Glen - Google Sheets",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://docs.google.com/spreadsheets/d/1RKBBP7gdR971QKVfBtF350eI-Iz-Jv049Z4jMeeyEgg/edit#gid=0"
+               } ],
+               "date_added": "13203720312470253",
+               "date_modified": "13203720312470253",
+               "id": "117",
+               "name": "Payslips",
+               "sync_transaction_version": "1",
+               "type": "folder"
+            }, {
+               "date_added": "13187710962151112",
+               "id": "118",
+               "meta_info": {
+                  "last_visited_desktop": "13189609153730892"
+               },
+               "name": "Timesheet - Google Sheets",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://docs.google.com/spreadsheets/d/1TZVzUQktUwNbKdO7-Evpspn70WBXtQIYPO0WZCgN7cU/edit#gid=0"
+            } ],
+            "date_added": "13203720312463214",
+            "date_modified": "13203720312463214",
+            "id": "26",
+            "name": "Spreadsheets",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "date_added": "13171306296052219",
+            "id": "27",
+            "name": "pytest introduction - Python Testing",
+            "sync_transaction_version": "6",
+            "type": "url",
+            "url": "http://pythontesting.net/framework/pytest/pytest-introduction/"
+         }, {
+            "children": [ {
+               "date_added": "13187008637254983",
+               "id": "113",
+               "meta_info": {
+                  "last_visited_desktop": "13194676144780468"
+               },
+               "name": "Napoleone",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.notion.so/zephony/Napoleone-b334a0db5a6e4c2b94e330112e9ecbcd"
+            } ],
+            "date_added": "13203720312463577",
+            "date_modified": "13203720312463577",
+            "id": "28",
+            "name": "Notion",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "date_added": "13181996948051170",
+            "id": "29",
+            "meta_info": {
+               "last_visited_desktop": "13191093435947240"
+            },
+            "name": "The Balance Small Business",
+            "sync_transaction_version": "7",
+            "type": "url",
+            "url": "https://www.thebalancesmb.com/"
+         }, {
+            "children": [ {
+               "date_added": "13179391011906240",
+               "id": "107",
+               "meta_info": {
+                  "last_visited_desktop": "13187513832638228"
+               },
+               "name": "Issues · Zephony/mialma",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://github.com/Zephony/mialma/issues"
+            }, {
+               "date_added": "13179391023630029",
+               "id": "108",
+               "meta_info": {
+                  "last_visited_desktop": "13198662816249510"
+               },
+               "name": "Issues · Zephony/newfaces",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://github.com/Zephony/newfaces/issues"
+            }, {
+               "date_added": "13179391044839527",
+               "id": "109",
+               "meta_info": {
+                  "last_visited_desktop": "13194810145751551"
+               },
+               "name": "Issues · Zephony/zephony.com",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://github.com/Zephony/zephony.com/issues"
+            }, {
+               "date_added": "13179391056926184",
+               "id": "110",
+               "meta_info": {
+                  "last_visited_desktop": "13193733772985443"
+               },
+               "name": "Issues · Zephony/alibalance",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://github.com/Zephony/alibalance/issues"
+            }, {
+               "date_added": "13179391082863953",
+               "id": "111",
+               "meta_info": {
+                  "last_visited_desktop": "13195677662535046"
+               },
+               "name": "Issues · Zephony/basket",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://github.com/Zephony/basket/issues"
+            }, {
+               "date_added": "13179391088422707",
+               "id": "112",
+               "meta_info": {
+                  "last_visited_desktop": "13179391088423600"
+               },
+               "name": "Issues · Zephony/core",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://github.com/Zephony/core/issues"
+            } ],
+            "date_added": "13203720312463885",
+            "date_modified": "13203720312463885",
+            "id": "30",
+            "name": "Github",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "children": [ {
+                  "date_added": "13199127238755385",
+                  "id": "104",
+                  "meta_info": {
+                     "last_visited_desktop": "13199127636135460"
+                  },
+                  "name": "React Table Filters",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://codepen.io/jerrylow/pen/eyZYdN"
+               }, {
+                  "date_added": "13199127279641997",
+                  "id": "105",
+                  "meta_info": {
+                     "last_visited_desktop": "13199127279642648"
+                  },
+                  "name": "React Search Filter",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://codepen.io/mtclmn/pen/QyPVJp"
+               }, {
+                  "date_added": "13199134528749325",
+                  "id": "106",
+                  "meta_info": {
+                     "last_visited_desktop": "13199184389927017"
+                  },
+                  "name": "Responsive sortable React table",
+                  "sync_transaction_version": "1",
+                  "type": "url",
+                  "url": "https://codepen.io/simonbreiter/pen/LbQMdz?editors=0010"
+               } ],
+               "date_added": "13203720312469802",
+               "date_modified": "13203720312469802",
+               "id": "103",
+               "name": "Codepen",
+               "sync_transaction_version": "1",
+               "type": "folder"
+            } ],
+            "date_added": "13203720312464170",
+            "date_modified": "13203720312464170",
+            "id": "31",
+            "name": "React",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "date_added": "13149790492974300",
+            "id": "32",
+            "meta_info": {
+               "last_visited_desktop": "13179390952546480"
+            },
+            "name": "powerful-chamber-34117.herokuapp.com/login?next=%2F",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "http://powerful-chamber-34117.herokuapp.com/login?next=%2F"
+         }, {
+            "children": [ {
+               "date_added": "13148573875827894",
+               "id": "101",
+               "name": "Understanding Nginx HTTP Proxying, Load Balancing, Buffering, and Caching | DigitalOcean",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.digitalocean.com/community/tutorials/understanding-nginx-http-proxying-load-balancing-buffering-and-caching"
+            }, {
+               "date_added": "13148574014139666",
+               "id": "102",
+               "name": "How To Optimize Nginx Configuration | DigitalOcean",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.digitalocean.com/community/tutorials/how-to-optimize-nginx-configuration"
+            } ],
+            "date_added": "13203720312465966",
+            "date_modified": "13203720312465966",
+            "id": "33",
+            "name": "Sysadmin stuff",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13148635430932734",
+               "id": "100",
+               "meta_info": {
+                  "last_visited_desktop": "13201890585857673"
+               },
+               "name": "Natural Acne Clinic | Natural acne treatments to heal and cure acne.",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.naturalacneclinic.com/"
+            } ],
+            "date_added": "13203720312466797",
+            "date_modified": "13203720312466797",
+            "id": "34",
+            "name": "Business Prospects",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13148922805379494",
+               "id": "98",
+               "meta_info": {
+                  "last_visited_desktop": "13176363999240042"
+               },
+               "name": "The wonderworld of Eldhraun lava field | Icelandmag",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://icelandmag.visir.is/article/wonderworld-eldhraun-lava-field"
+            }, {
+               "date_added": "13149179153682598",
+               "id": "99",
+               "name": "Business Building Bootcamp – Special Offer - Blog Marketing Academy",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.blogmarketingacademy.com/lp/bootcamp-special-offer/"
+            } ],
+            "date_added": "13203720312467064",
+            "date_modified": "13203720312467064",
+            "id": "35",
+            "name": "Tourist places",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13149182817532461",
+               "id": "88",
+               "name": "How to Compete in SaaS Today and for the Future",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://hitenism.com/competing-in-saas/"
+            }, {
+               "date_added": "13149232005572243",
+               "id": "89",
+               "name": "SaaS Business Models | For Entrepreneurs",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.forentrepreneurs.com/saas-business-models-slide-deck/"
+            }, {
+               "date_added": "13149232009277516",
+               "id": "90",
+               "name": "Ultimate Guide To Choosing Your Niche: Finding A Good Market For You - Blog Marketing Academy",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.blogmarketingacademy.com/choosing-niche/"
+            }, {
+               "date_added": "13149232012932946",
+               "id": "91",
+               "name": "11 Revenue Streams For SaaS Business",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.forbes.com/sites/neilpatel/2015/03/26/11-revenue-streams-for-saas-business/#3f93c89753de"
+            }, {
+               "date_added": "13149232018236661",
+               "id": "92",
+               "name": "The Illusion of Product/Market Fit for SaaS Companies - Feld Thoughts",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.feld.com/archives/2015/01/illusion-product-market-fit-saas-companies.html"
+            }, {
+               "date_added": "13149326720004420",
+               "id": "93",
+               "name": "5 Habits to Building Better Products Faster.pdf",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.dropbox.com/s/hfbzj88pa8jaqnt/5%20Habits%20to%20Building%20Better%20Products%20Faster.pdf?dl=0"
+            }, {
+               "date_added": "13152277139045053",
+               "id": "94",
+               "meta_info": {
+                  "last_visited_desktop": "13185981045491548"
+               },
+               "name": "Selling Software To Large Businesses",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://training.kalzumeus.com/newsletters/archive/enterprise_sales"
+            }, {
+               "date_added": "13152277146037213",
+               "id": "95",
+               "name": "How do you sell SaaS software to enterprise businesses? | Leadfeeder",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://blog.leadfeeder.com/sell-software-to-enterprise/"
+            }, {
+               "date_added": "13152277150884608",
+               "id": "96",
+               "name": "(1/1) How do you sell software to companies? - Quora",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.quora.com/How-do-you-sell-software-to-companies"
+            }, {
+               "date_added": "13152277157053587",
+               "id": "97",
+               "name": "Whale Hunting: How to Sell Software to Big Companies | OpenView Blog|Whale Hunting: How to Sell Software to Big Companies | OpenView Blog",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://labs.openviewpartners.com/whale-hunting-how-to-sell-software-to-big-companies/#.Wd88bE1fhhE"
+            } ],
+            "date_added": "13203720312467270",
+            "date_modified": "13203720312467270",
+            "id": "36",
+            "name": "SaaS",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "date_added": "13151132072258369",
+            "id": "37",
+            "name": "The Complete React Native and Redux Course | Udemy",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://www.udemy.com/the-complete-react-native-and-redux-course/learn/v4/t/lecture/5744064?start=0"
+         }, {
+            "date_added": "13151771302544639",
+            "id": "38",
+            "meta_info": {
+               "last_visited_desktop": "13177229545754599"
+            },
+            "name": "terminus-in / CM Dash / issues — Bitbucket",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://bitbucket.org/terminus-in/cm-dash/issues?status=new&status=open"
+         }, {
+            "date_added": "13152256582874790",
+            "id": "39",
+            "name": "Reward",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "http://changingminds.org/techniques/conditioning/reward.htm"
+         }, {
+            "date_added": "13152872215288317",
+            "id": "40",
+            "name": "Chairs",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "http://www.industrybuying.com/plastic-chairs-supreme-FU.FU.PA.378034/?q=Plastic%20Chair"
+         }, {
+            "children": [ {
+               "date_added": "13152872280678783",
+               "id": "85",
+               "name": "Buy Nilkamal Black Weekender Garden Chair FLGCWEEKNDRGCNLIBK Online in India at Best Prices",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.industrybuying.com/plastic-chairs-nilkamal-FUR.PLA.14104607/?q=Plastic%20Chair"
+            }, {
+               "date_added": "13152872359264474",
+               "id": "86",
+               "name": "Buy Supreme Cambridge Premium Chair- Cane Online in India at Best Prices",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.industrybuying.com/plastic-chairs-supreme-PL.PL.PL8.1476591/"
+            }, {
+               "date_added": "13164487775560778",
+               "id": "87",
+               "name": "Designspiration™",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "javascript:void((function(d){var%20e=d.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('charset','UTF-8');e.setAttribute('src','https://www.designspiration.net/dspn.js?r='+Math.random()*99999999);d.body.appendChild(e)})(document));"
+            } ],
+            "date_added": "13203720312467738",
+            "date_modified": "13203720312467738",
+            "id": "41",
+            "name": "Chairs",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "date_added": "13153777697703199",
+            "id": "42",
+            "name": "How to serve a static webpage from falcon application?",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://reformatcode.com/code/python/how-to-serve-a-static-webpage-from-falcon-application"
+         }, {
+            "children": [ {
+               "date_added": "13154614678443468",
+               "id": "84",
+               "name": "Bajaj V12 Price, Images, Colours, Mileage & Reviews | BikeWale",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.bikewale.com/bajaj-bikes/v12/"
+            } ],
+            "date_added": "13203720312467781",
+            "date_modified": "13203720312467781",
+            "id": "43",
+            "name": "Bikes",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "date_added": "13156248725213579",
+            "id": "44",
+            "name": "cron - How to run recurring task in the Python Flask framework? - Stack Overflow",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://stackoverflow.com/questions/25639221/how-to-run-recurring-task-in-the-python-flask-framework"
+         }, {
+            "date_added": "13156248893883145",
+            "id": "45",
+            "meta_info": {
+               "last_visited_desktop": "13180374497217691"
+            },
+            "name": "python - Scheduling a function to run every hour on Flask - Stack Overflow",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://stackoverflow.com/questions/21214270/scheduling-a-function-to-run-every-hour-on-flask"
+         }, {
+            "children": [ {
+               "date_added": "13161253704578305",
+               "id": "79",
+               "name": "The Best Advice For Remote Work Success From 10 Global Teams [Free Guide]",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://blog.trello.com/remote-work-team-success-guide"
+            }, {
+               "date_added": "13161253724542716",
+               "id": "80",
+               "name": "Trello-Embrace-Remote-Work-Ultimate-Guide.pdf",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://info.trello.com/hubfs/Trello-Embrace-Remote-Work-Ultimate-Guide.pdf?hsCtaTracking=5ce48f51-9832-4e59-9fc3-e2160c318d67%7C4f13cf72-2d29-48f7-ad1f-44fe4bb9a9ea"
+            }, {
+               "date_added": "13161253729423130",
+               "id": "81",
+               "name": "Remote Hiring Strategy Advice from an Actual Remote Employee",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.selectinternational.com/blog/remote-hiring-strategy-advice-from-an-actual-remote-employee"
+            }, {
+               "date_added": "13161253962082501",
+               "id": "82",
+               "name": "Why Most People Will Never Be Successful – The Mission – Medium",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://medium.com/the-mission/why-most-people-will-never-be-successful-632bb24fa5c3"
+            }, {
+               "children": [  ],
+               "date_added": "13203720312469008",
+               "date_modified": "13203720312469008",
+               "id": "83",
+               "name": "New folder",
+               "sync_transaction_version": "1",
+               "type": "folder"
+            } ],
+            "date_added": "13203720312467870",
+            "date_modified": "13203720312467870",
+            "id": "46",
+            "name": "Remote Hire",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13162107795474359",
+               "id": "77",
+               "meta_info": {
+                  "last_visited_desktop": "13178039118013126"
+               },
+               "name": "Composition vs. Inheritance: How to Choose? | ThoughtWorks",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.thoughtworks.com/insights/blog/composition-vs-inheritance-how-choose"
+            }, {
+               "date_added": "13162107823978390",
+               "id": "78",
+               "name": "Reusable software? Just don't write generic code - Jos de Jong",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://josdejong.com/blog/2015/01/06/code-reuse/"
+            } ],
+            "date_added": "13203720312467873",
+            "date_modified": "13203720312467873",
+            "id": "47",
+            "name": "To Share with team",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "date_added": "13163419631014287",
+            "id": "48",
+            "name": "Account Linking - Messenger Platform",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://developers.facebook.com/docs/messenger-platform/identity/account-linking"
+         }, {
+            "date_added": "13163672529531714",
+            "id": "49",
+            "name": "Quick Start - Messenger Platform",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://developers.facebook.com/docs/messenger-platform/getting-started/quick-start#requirements"
+         }, {
+            "date_added": "13163672538708281",
+            "id": "50",
+            "name": "Messenger Bot Subscription Using Broadcast API in PHP - The Debuggers",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "http://thedebuggers.com/subscription-using-broadcast-api-php/"
+         }, {
+            "date_added": "13166198377208731",
+            "id": "51",
+            "name": "Screenshot - Share right from your browser toolbar",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "http://screenshot.co/#!/367e2031f6"
+         }, {
+            "children": [  ],
+            "date_added": "13203720312468013",
+            "date_modified": "13203720312468013",
+            "id": "52",
+            "name": "Remote",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "date_added": "13170434567797613",
+            "id": "53",
+            "name": "Pricing | Shippable",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "http://www.shippable.com/pricing.html"
+         }, {
+            "children": [ {
+               "date_added": "13176649006750331",
+               "id": "67",
+               "meta_info": {
+                  "last_visited_desktop": "13176649006925712"
+               },
+               "name": "Intellectual Property Rights in Software - What They Are and How to Protect Them - Freibrun Law",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.freibrun.com/intellectual-property-rights-software-protect/"
+            }, {
+               "date_added": "13176649035042395",
+               "id": "68",
+               "meta_info": {
+                  "last_visited_desktop": "13176654633773772"
+               },
+               "name": "The latest version of my ‘killer contract’ for web designers and developers",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://gist.github.com/malarkey/4031110"
+            }, {
+               "date_added": "13176650494033827",
+               "id": "69",
+               "meta_info": {
+                  "last_visited_desktop": "13176650494035647"
+               },
+               "name": "Andy Clarke: The Interview - Killing Contracts — Smashing Magazine",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.smashingmagazine.com/2013/01/killing-contracts-interview-andy-clarke/"
+            }, {
+               "date_added": "13176652156602232",
+               "id": "70",
+               "meta_info": {
+                  "last_visited_desktop": "13176652156603633"
+               },
+               "name": "Useful Legal Documents For Designers (PDF/DOC) — Smashing Magazine",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.smashingmagazine.com/2012/08/free-download-useful-legal-documents-for-designers-pdf/"
+            }, {
+               "date_added": "13176652797114243",
+               "id": "71",
+               "meta_info": {
+                  "last_visited_desktop": "13176652797114863"
+               },
+               "name": "Licenses and Copyright | Linux Journal",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.linuxjournal.com/article/1297"
+            }, {
+               "date_added": "13176654406634525",
+               "id": "72",
+               "meta_info": {
+                  "last_visited_desktop": "13176654406635855"
+               },
+               "name": "Three Wise Monkeys open-source NDA — Stuff & Nonsense",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://stuffandnonsense.co.uk/projects/three-wise-monkeys/"
+            }, {
+               "date_added": "13176654458522249",
+               "id": "73",
+               "meta_info": {
+                  "last_visited_desktop": "13176654458522877"
+               },
+               "name": "(Data) Protection Racket",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://gist.github.com/malarkey/892bb4557be0757f017ad9aa233f8389"
+            }, {
+               "date_added": "13176654591276354",
+               "id": "74",
+               "meta_info": {
+                  "last_visited_desktop": "13176654591278115"
+               },
+               "name": "Three Wise Monkeys (NDA)",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://gist.github.com/malarkey/4188969"
+            }, {
+               "date_added": "13176655147107006",
+               "id": "75",
+               "meta_info": {
+                  "last_visited_desktop": "13191283022802404"
+               },
+               "name": "Development Contact Template.pages",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://campusonfire.com/development-contract-template.pdf"
+            }, {
+               "date_added": "13176658781460937",
+               "id": "76",
+               "meta_info": {
+                  "last_visited_desktop": "13176658781462532"
+               },
+               "name": "Software Development Agreement Template - Get Free Sample",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.pandadoc.com/software-development-agreement-template/"
+            } ],
+            "date_added": "13203720312468044",
+            "date_modified": "13203720312468044",
+            "id": "54",
+            "name": "Software Legal",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "date_added": "13180085582496300",
+            "id": "55",
+            "meta_info": {
+               "last_visited_desktop": "13180085582512149"
+            },
+            "name": "Google Interview Prep Cheat Sheet",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://gumroad.com/l/prepsheet"
+         }, {
+            "children": [ {
+               "date_added": "13180433685886197",
+               "id": "62",
+               "meta_info": {
+                  "last_visited_desktop": "13180433685980135"
+               },
+               "name": "Understanding Manipulation Tactics - Dr. George Simon",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.drgeorgesimon.com/understanding-manipulation-tactics/"
+            }, {
+               "date_added": "13180433719510475",
+               "id": "63",
+               "meta_info": {
+                  "last_visited_desktop": "13180433719510869"
+               },
+               "name": "A Guide To Manipulation",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://aguidetomanipulation.tumblr.com/"
+            }, {
+               "date_added": "13180433723426466",
+               "id": "64",
+               "meta_info": {
+                  "last_visited_desktop": "13180433723426659"
+               },
+               "name": "Landmark Manipulation Techniques",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://forum.culteducation.com/read.php?4,2757,page=4"
+            }, {
+               "date_added": "13180433727008495",
+               "id": "65",
+               "meta_info": {
+                  "last_visited_desktop": "13180433727009164"
+               },
+               "name": "People who are difficult to manipulate? : Antisocial Personality Disorder Forum - Psych forums",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.psychforums.com/antisocial-personality/topic167601.html"
+            }, {
+               "date_added": "13180433729099664",
+               "id": "66",
+               "meta_info": {
+                  "last_visited_desktop": "13180433729100275"
+               },
+               "name": "Reading People and Conversation Manipulation : Antisocial Personality Disorder Forum - Psych forums",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://www.psychforums.com/antisocial-personality/topic94385.html"
+            } ],
+            "date_added": "13203720312468078",
+            "date_modified": "13203720312468078",
+            "id": "56",
+            "name": "Psycology reading list",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "date_added": "13183199177570166",
+            "id": "57",
+            "meta_info": {
+               "last_visited_desktop": "13183199177570728"
+            },
+            "name": "Office workstation tables - Coimbatore - Furniture - Kandan Nagar",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://www.olx.in/item/office-workstation-tables-ID1o1pZt.html#21f6f962da"
+         }, {
+            "date_added": "13183273621519066",
+            "id": "58",
+            "meta_info": {
+               "last_visited_desktop": "13183273621520170"
+            },
+            "name": "(1) Where can I buy dry erase paint in Bangalore? - Quora",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://www.quora.com/Where-can-I-buy-dry-erase-paint-in-Bangalore"
+         }, {
+            "date_added": "13202558611069575",
+            "id": "59",
+            "meta_info": {
+               "last_visited_desktop": "13202728797076938"
+            },
+            "name": "Trusted Shopify Partners | Dublin, Ireland",
+            "sync_transaction_version": "1",
+            "type": "url",
+            "url": "https://smooth.ie/blogs/news/svg-wavey-transitions-between-sections"
+         }, {
+            "children": [ {
+               "date_added": "13203359237981213",
+               "id": "61",
+               "meta_info": {
+                  "last_visited_desktop": "13203359238099946"
+               },
+               "name": "Software Development & Design Company | Atomic Object",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "https://atomicobject.com/"
+            } ],
+            "date_added": "13203720312468197",
+            "date_modified": "13203720312468197",
+            "id": "60",
+            "name": "Custom Software Companies",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         } ],
+         "date_added": "13203720227236003",
+         "date_modified": "13202558611069575",
+         "id": "1",
+         "name": "Bookmarks bar",
+         "type": "folder"
+      },
+      "other": {
+         "children": [ {
+            "children": [ {
+               "date_added": "13048794675256853",
+               "id": "18",
+               "name": "Best Practices for building JSON REST Web Services | Building Feedly",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://blog.feedly.com/2009/05/06/best-practices-for-building-json-rest-web-services/"
+            }, {
+               "date_added": "13048794751477534",
+               "id": "19",
+               "meta_info": {
+                  "stars.flags": "6",
+                  "stars.id": "ssc_4a4b1d0aa5a4600e",
+                  "stars.imageData": "Cg5ENWlqaE5USDdjLVZGTRJDCjtodHRwOi8vd3d3LmlibS5jb20vZGV2ZWxvcGVyd29ya3MvbGlicmFyeS93cy1iZXN0MS9maWcxLmpwZxCUAhi2ARpjCltodHRwOi8vdDMuZ3N0YXRpYy5jb20vaW1hZ2VzP3E9dGJuOkFOZDlHY1FpTlAwUEdVdUZPbGVkanJJTEdVbUhHcERJZEJlanAzWTN4ekRzYkljcUI1ZV8ydlQ2EJQCGLYBIh8IARCUAhi2ASCDNEIGEgSAAAAASgppbWFnZS9qcGVn",
+                  "stars.pageData": "Ig5GNThhS21kWnBIN09rTQ==",
+                  "stars.version": "sync.server.Chrome40"
+               },
+               "name": "Best practices for web services: Part 1, Back to the basics",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.ibm.com/developerworks/webservices/library/ws-best1/index.html"
+            }, {
+               "date_added": "13049648798229579",
+               "id": "20",
+               "name": "files.benramsey.com/talks/2007/phpworks/phpworks07-rest.pdf",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://files.benramsey.com/talks/2007/phpworks/phpworks07-rest.pdf"
+            }, {
+               "date_added": "13049653609210541",
+               "id": "21",
+               "meta_info": {
+                  "stars.flags": "6",
+                  "stars.id": "ssc_718c78fd6c058de8",
+                  "stars.imageData": "Cg4zYnZKdEdDN3JHN1kyTRJLCkNodHRwOi8vd3d3LmlibS5jb20vZGV2ZWxvcGVyd29ya3MvbGlicmFyeS93YS1hai1tdWx0aXRpZXIvZmlnMDEuZ2lmEI4CGLsBGmMKW2h0dHA6Ly90MS5nc3RhdGljLmNvbS9pbWFnZXM/cT10Ym46QU5kOUdjU1RIdzQzZW1QRHZpVnhDWERSTzJhREpNa0F4MTJjdWM3SVhubndtd2xIZUhZZ0JkM0MQjgIYuwEiHwgBEI4CGLsBILw9QgYSBIAAAABKCmltYWdlL2pwZWc=",
+                  "stars.pageData": "Ig42RnoxWERjSGMxVlpVTQ==",
+                  "stars.version": "sync.server.Chrome40"
+               },
+               "name": "A multi-tier architecture for building RESTful Web services",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.ibm.com/developerworks/library/wa-aj-multitier/"
+            }, {
+               "date_added": "13050232413112837",
+               "id": "22",
+               "meta_info": {
+                  "stars.id": "ssc_caf40d12206a3353",
+                  "stars.pageData": "Ig5LSjZpQm9BWEE0d0pBTQ==",
+                  "stars.version": "sync.server.Chrome40"
+               },
+               "name": "Ben Alman » There's no such thing as a \"JSON Object\"",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://benalman.com/news/2010/03/theres-no-such-thing-as-a-json/"
+            } ],
+            "date_added": "13203720312462005",
+            "date_modified": "13203720312462005",
+            "id": "5",
+            "name": "rest",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13051811035348139",
+               "id": "17",
+               "name": "Brigade 101: How to Hack Night | Code for America",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.codeforamerica.org/blog/2013/07/24/brigade-101-how-to-hack-night/"
+            } ],
+            "date_added": "13203720312462192",
+            "date_modified": "13203720312462192",
+            "id": "6",
+            "name": "hacknight",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13099698126365572",
+               "id": "14",
+               "name": "Bob Sorem's Hymn MIDI Sequences (F-I)",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.tc.umn.edu/~sorem002/hymn_midi_fi.html"
+            }, {
+               "date_added": "13099753937237725",
+               "id": "15",
+               "name": "Christian Background Music™ (MIDI) • ChristianAnswers.Net",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.christiananswers.net/midimenu.html"
+            }, {
+               "date_added": "13099838318517727",
+               "id": "16",
+               "name": "Classical Piano Midi Page - MIDI files",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://www.piano-midi.de/midi_files.htm"
+            } ],
+            "date_added": "13203720312462196",
+            "date_modified": "13203720312462196",
+            "id": "7",
+            "name": "Midi",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13100227346868861",
+               "id": "13",
+               "name": "OurWorshipSound |",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://ourworshipsound.com/"
+            } ],
+            "date_added": "13203720312462199",
+            "date_modified": "13203720312462199",
+            "id": "8",
+            "name": "Piano",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13100292598597546",
+               "id": "12",
+               "name": "Personal Singing Guide with Online Lessons and Tips for Singers and Vocalists!",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://your-personal-singing-guide.com/"
+            } ],
+            "date_added": "13203720312462201",
+            "date_modified": "13203720312462201",
+            "id": "9",
+            "name": "Singing",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13133372664307365",
+               "id": "11",
+               "meta_info": {
+                  "stars.id": "ssc_8557a6bcc19f4ad8",
+                  "stars.version": "sync.server.Chrome45"
+               },
+               "name": "Home Remodeling Ideas | Modernize",
+               "sync_transaction_version": "1",
+               "type": "url",
+               "url": "http://modernize.com/"
+            } ],
+            "date_added": "13203720312462203",
+            "date_modified": "13203720312462203",
+            "id": "10",
+            "name": "Lifestyle",
+            "sync_transaction_version": "1",
+            "type": "folder"
+         } ],
+         "date_added": "13203720227236031",
+         "date_modified": "0",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "sync_transaction_version": "7",
+      "synced": {
+         "children": [  ],
+         "date_added": "13203720227236032",
+         "date_modified": "0",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

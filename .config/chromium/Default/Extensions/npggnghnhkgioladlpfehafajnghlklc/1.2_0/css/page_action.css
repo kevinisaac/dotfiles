@@ -1,0 +1,186 @@
+@import 'global.css';
+
+body, html {
+	width: 100%;
+	max-height: 587px;
+	overflow-y: hidden;
+	font-size:13px;
+	background:#fafafa;
+}
+
+a {
+	color: rgb(17, 85, 204);
+	text-decoration: none;
+}
+
+header {
+	display: block;
+	padding: 10px 10px 10px 10px;
+	position: fixed;
+	width: 100%;
+}
+
+.box-fix {
+	box-shadow: 0 5px 32px -14px #999;
+	margin-left: -6px;
+	padding: 0 12px 12px 6px;
+}
+
+article {
+	min-height: 150px;
+	padding: 14px 12px 15px 12px;
+	padding-top: 92px;
+	
+}
+
+.ac {
+	padding-top: 134px
+}
+
+#lcontainer{}
+
+#logo {
+	display: block;
+    text-indent: -9999px;
+    height: 35px;
+    width: 178px;
+    margin: 6px 0 18px 0px;
+	background: transparent url(../images/dictionarist.png) no-repeat top left;
+}
+
+#q{
+	border: 1px solid #ccc;
+	font-size: 15px;
+	padding: 4px 4px;
+	width:310px;
+	border-right:none;
+	height:32px; 
+	float:left; 
+	margin-left:2px;
+}
+
+#q:focus {
+	outline: none;
+}
+
+#define{ 
+	float:left; 
+	height:32px;display:inline-block; 
+	border: 1px solid #6b8eb4;
+	font-size: 14px;
+	1padding: 6px 10px;
+	color:white;
+	background:#6b8eb4;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+	outline:none;
+	background: #5880ab url(../images/searchicon.png) no-repeat top left;text-indent:-90px;width:36px;
+	background-position:9px 7px;
+}
+#define:active{opacity:.9}
+
+#press_enter {
+	color: #666;
+	display: none;
+	left: 8px;
+	position: relative;	
+}
+
+.title {
+	border-bottom: 1px dashed #ccc;
+	margin-bottom: 5px;
+	margin-top: 19px;
+	padding-bottom: 8px;
+	font: bold normal 16px 'Segoe UI';
+	color: #333;
+}
+
+#meaning {
+	overflow-y: auto;
+	max-height: 400px;
+	padding-right: 6px;
+	font-size: 13px;
+	line-height:20px;
+}
+
+#meaning p{
+	margin:0;padding:0 0 1px 0;
+}
+#example {
+	margin-top:-7px;
+	overflow-y: auto;
+	max-height: 400px;
+	padding-right: 6px;
+	font-size: 13px;
+	line-height:20px;
+}
+#example a{margin-top:-2px;font-family: 'Segoe UI', Tahoma, sans-serif;font-size:13px;}
+#example .o{}
+#example .t{color:#777;padding-bottom:10px;font-style: italic;}
+#lookup-status {margin-top: 12px;}
+#speaker{
+background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAMAAABFjsb+AAAAgVBMVEUAAAAoKCgoKCgoKCgnJycoKCgnJycoKCgnJycoKCgmJiYoKCgoKCgoKCgoKCgmJiYmJiYoKCgoKCgoKCgnJycoKCgnJycnJycoKCgoKCgoKCgmJiYoKCgoKCgoKCgoKCgnJycoKCgnJycoKCgoKCgoKCgoKCgmJiYoKCgoKCgoKCgXBUyBAAAAKnRSTlMA/EQkz528aRn2zLajcGNQPwLGi4V3XS0nFREH8bB+VjkfDe/j2KmPjDeeOvZQAAAAsklEQVQY013Q2RKCMAwF0Fsspci+76C45/8/0Agqy31peybTZIJf8rTBLh7RaUcWubaBaE0+9VoYODjD9BxTp3MowYGtkuSObA+hlMowGZBRxx9IF5zZPM29fOBoLibjJpK3ZmM+BVxYbKyynzAo3FhBGQaeXa7sLkqYtoaKq7r+mrL44DkCsttLP5uGlm3JBaFlJZTgzIb8KoJlBenHShG/1ktw2Opws5mceNZ9wuB/fQNSUQtIBZ9qkwAAAABJRU5ErkJggg==');
+vertical-align:text-top;display:inline-block;padding:0;cursor:pointer;width:19px;height:19px;border:none;margin:3px 0 0 10px;
+}
+#speaker:active{opacity:.8}
+
+#web-search-link {
+	margin-top: 6px;
+}
+
+#usage-tip {
+	color: #666;
+	margin-top: 12px;
+}
+
+footer {
+	color: #666;
+	font-size: 11px;
+	margin-top: 4px;
+	text-align: center;
+	padding-bottom:4px;
+}
+
+#meta {
+	display: inline-block;
+	margin-left: 20px;
+	position: relative;
+	top: -3px;
+}
+
+.ui-corner-all {
+	border: 1px solid #ccc;
+	border-radius: 0;
+}
+
+.ui-autocomplete a.ui-state-focus {
+	background: #eee;
+	border: none;
+	border-radius: 0;
+	margin: 0 !important;
+}
+
+.ui-autocomplete .ui-menu-item .ui-corner-all {
+	border: none;
+}
+
+.ui-autocomplete {
+	border-top-color: #d9d9d9;
+	-webkit-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.2);
+	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.2);
+	cursor: default;
+	font-size: 15px;
+}
+
+.meta {
+	color: #878787;
+}
+
+.dic-right{text-align:right;font-size:11px;padding-top:5px;color:#777;}
+.iwik-tit{font-weight:bold;clear:both;margin-top:10px;font-size:14px;color:#333;}
+.iwik-ins-def{padding-left:25px;}
+.iwik-ins-ex{color:#777;padding-left:50px;}
+.iwik-def{padding-top:10px;}
+.iwik-ex{color:#777;padding-left:25px;}
+.iwik-nu{color:#777;}

@@ -381,6 +381,8 @@ function theme.at_screen_connect(s)
             cpu_icon,
             cpuwidget,
             bottom_bar,
+            require("battery-widget") {},
+            bottom_bar,
             calendar_icon,
             calendarwidget,
             bottom_bar,

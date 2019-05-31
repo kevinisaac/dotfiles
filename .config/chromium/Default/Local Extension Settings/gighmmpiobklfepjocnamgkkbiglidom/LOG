@@ -1,0 +1,29 @@
+2019/05/31-11:23:49.220 43d Reusing MANIFEST /home/kevin/.config/chromium/Default/Local Extension Settings/gighmmpiobklfepjocnamgkkbiglidom/MANIFEST-000001
+2019/05/31-11:23:49.220 43d Recovering log #129
+2019/05/31-11:23:49.221 43d Reusing old log /home/kevin/.config/chromium/Default/Local Extension Settings/gighmmpiobklfepjocnamgkkbiglidom/000129.log 
+2019/05/31-11:24:50.035 a7c Level-0 table #135: started
+2019/05/31-11:24:50.081 a7c Level-0 table #135: 4100452 bytes OK
+2019/05/31-11:24:50.086 a7c Delete type=0 #129
+2019/05/31-11:26:04.564 a7c Level-0 table #137: started
+2019/05/31-11:26:04.645 a7c Level-0 table #137: 4100467 bytes OK
+2019/05/31-11:26:04.650 a7c Delete type=0 #134
+2019/05/31-12:24:49.551 a7c Level-0 table #139: started
+2019/05/31-12:24:49.600 a7c Level-0 table #139: 4100508 bytes OK
+2019/05/31-12:24:49.604 a7c Delete type=0 #136
+2019/05/31-12:24:51.632 a7c Level-0 table #141: started
+2019/05/31-12:24:51.682 a7c Level-0 table #141: 4100467 bytes OK
+2019/05/31-12:24:51.687 a7c Delete type=0 #138
+2019/05/31-12:24:51.688 a7c Compacting 4@0 + 2@1 files
+2019/05/31-12:24:51.753 a7c Generated table #142@0: 1 keys, 4100228 bytes
+2019/05/31-12:24:51.757 a7c Generated table #143@0: 4 keys, 394 bytes
+2019/05/31-12:24:51.757 a7c Compacted 4@0 + 2@1 files => 4100622 bytes
+2019/05/31-12:24:51.762 a7c compacted to: files[ 0 2 1 0 0 0 0 ]
+2019/05/31-12:24:51.762 a7c Delete type=2 #132
+2019/05/31-12:24:51.762 a7c Delete type=2 #141
+2019/05/31-12:24:51.762 a7c Delete type=2 #137
+2019/05/31-12:24:51.763 a7c Delete type=2 #139
+2019/05/31-12:24:51.763 a7c Delete type=2 #131
+2019/05/31-12:24:51.763 a7c Delete type=2 #135
+2019/05/31-12:31:29.774 a7c Level-0 table #145: started
+2019/05/31-12:31:29.833 a7c Level-0 table #145: 4100230 bytes OK
+2019/05/31-12:31:29.841 a7c Delete type=0 #140

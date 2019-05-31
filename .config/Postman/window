@@ -1,0 +1,4 @@
+{"$$indexCreated":{"fieldName":"id","unique":true,"sparse":false}}
+{"type":"requester","id":"7e8e4bb6-f04f-4af6-a5ac-02403076d6a3","browserWindowId":4,"activeSession":"","position":{},"size":{"width":1280,"height":800},"visibility":{"maximized":false,"isFullScreen":false},"_id":"7e8e4bb6-f04f-4af6-a5ac-02403076d6a3"}
+{"$$deleted":true,"_id":"7e8e4bb6-f04f-4af6-a5ac-02403076d6a3"}
+{"type":"requester","id":"7e8e4bb6-f04f-4af6-a5ac-02403076d6a3","browserWindowId":4,"activeSession":"91e51297-ee2e-4d69-bccd-34185b47b574","position":{},"size":{"width":1280,"height":800},"visibility":{"maximized":false,"isFullScreen":false},"_id":"7e8e4bb6-f04f-4af6-a5ac-02403076d6a3"}

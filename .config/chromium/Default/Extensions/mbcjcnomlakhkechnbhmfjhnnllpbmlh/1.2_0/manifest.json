@@ -1,0 +1,35 @@
+{
+   "background": {
+      "persistent": false,
+      "scripts": [ "tab_pinner.js" ]
+   },
+   "commands": {
+      "tab_pinner_pin_all_tabs": {
+         "description": "Pin all tabs in the current window."
+      },
+      "tab_pinner_pin_unpin_tab": {
+         "description": "Pin or unpin the current tab.",
+         "suggested_key": {
+            "default": "Ctrl+Shift+X"
+         }
+      },
+      "tab_pinner_unpin_all_tabs": {
+         "description": "Unpin all pinned tabs in the current window.",
+         "suggested_key": {
+            "default": "Alt+Shift+X"
+         }
+      }
+   },
+   "description": "Pin or Unpin a tab easily from the keyboard.",
+   "icons": {
+      "128": "pin_128.png",
+      "16": "pin_16.png",
+      "48": "pin_48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAghKldKpyYEOrRb10CONKnrY43Mxi0QDqrUyatWiyOSlJTAmwtaHqYveFazsPaiW5MuxwW6C+XUCJkWRq20QzY/QMnRJ/RGdhe69V/e6tRSZG3NbI8qMu59+/45gQ4p2AoPC/+iayO7tR1n7VkFIodSqjhmtqMrB4iKnozzQjJ6tK7cUIFOOLGo2llDmUeanyaJusXShMR2bQONplHjyStN2Mp+yo714RgreAutc2aRKvRcBukB7XHnkRIKRO86CKv/fCdUNadCbLP66FadIGubbct/YudkqXI4FrUSEQSNoQDkCzuWPOyLOS8MA6Sijl2QFvY2p45MbMml1iZ1YcowIDAQAB",
+   "manifest_version": 2,
+   "name": "Tab Pinner (Keyboard Shortcuts)",
+   "permissions": [  ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.2"
+}

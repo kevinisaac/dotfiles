@@ -1,0 +1,35 @@
+{
+   "background": {
+      "page": "background/background.html"
+   },
+   "browser_action": {
+      "default_icon": "assets/icon48.png",
+      "default_popup": "dropdown/dropdown.html"
+   },
+   "content_scripts": [ {
+      "css": [ "content-script/styles/icons.css" ],
+      "exclude_matches": [ "*://*/*.pdf", "https://mail.google.com/*", "https://inbox.google.com/*", "*://localhost/*", "*://tweetdeck.twitter.com/*" ],
+      "js": [ "content-script/scripts/point-cs.js" ],
+      "matches": [ "\u003Call_urls>" ],
+      "run_at": "document_end"
+   }, {
+      "js": [ "content-script/scripts/point-on-page.js" ],
+      "matches": [ "*://*.nymag.com/*", "*://*.vulture.com/*", "*://*.nytimes.com/*", "*://*.huffingtonpost.com/*", "*://*.buzzfeed.com/*", "*://*.newyorker.com/*", "*://*.youtube.com/*", "*://*.grantland.com/*", "*://*.techcrunch.com/*", "*://*.theverge.com/*", "*://*.wired.com/*", "*://*.medium.com/*", "*://*.theatlantic.com/*", "*://*.vice.com/*", "*://*.thoughtcatalog.com/*", "*://*.complex.com/*", "*://*.businessinsider.com/*", "*://*.gawker.com/*", "*://*.deadspin.com/*", "*://*.gizmodo.com/*", "*://*.io9.com/*", "*://*.jalopnik.com/*", "*://*.jezebel.com/*", "*://*.kotaku.com/*", "*://*.lifehacker.com/*", "*://*.kinja.com/*", "*://*.reddit.com/*" ]
+   }, {
+      "js": [ "point-website-cs/main.js" ],
+      "matches": [ "http://*.getpoint.co/*" ]
+   } ],
+   "description": "Point is a quick way to share and discuss what you find online.",
+   "icons": {
+      "128": "assets/icon128.png",
+      "16": "assets/icon16.png",
+      "48": "assets/icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCCpyN61npup23mRc/BXE2/S0o9R6GokSUunZxUSUG1Qii+pxgSbQgvYDqN9+9o5WrWwrRk7jW74xbdOjkJJNrT/iEvxAQt0JxPtNNr42oZa6Ji0fYanRCz94EK4U8Qo0ugC4E4iBZmXw4DMvWk/ZPUDGbkMZkUGaulG+E7kAQxTwIDAQAB",
+   "manifest_version": 2,
+   "name": "Point",
+   "permissions": [ "webNavigation", "contextMenus", "cookies", "tabs", "windows", "storage", "notifications", "\u003Call_urls>", "chrome://favicon/", "alarms", "activeTab", "webRequest", "webRequestBlocking" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2018.2.0.2",
+   "web_accessible_resources": [ "assets/*", "first-time/*", "content-script/styles/*", "chrome://favicon/" ]
+}

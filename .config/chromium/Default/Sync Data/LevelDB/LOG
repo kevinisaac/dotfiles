@@ -1,0 +1,21 @@
+2019/05/31-11:23:48.731 3ff Reusing MANIFEST /home/kevin/.config/chromium/Default/Sync Data/LevelDB/MANIFEST-000001
+2019/05/31-11:23:48.731 3ff Recovering log #26
+2019/05/31-11:23:48.732 3ff Reusing old log /home/kevin/.config/chromium/Default/Sync Data/LevelDB/000026.log 
+2019/05/31-11:28:02.698 a7c Level-0 table #30: started
+2019/05/31-11:28:02.712 a7c Level-0 table #30: 191901 bytes OK
+2019/05/31-11:28:02.716 a7c Delete type=0 #26
+2019/05/31-11:29:09.469 a7c Level-0 table #32: started
+2019/05/31-11:29:09.473 a7c Level-0 table #32: 145235 bytes OK
+2019/05/31-11:29:09.477 a7c Delete type=0 #29
+2019/05/31-11:29:09.478 a7c Compacting 4@0 + 1@1 files
+2019/05/31-11:29:09.485 a7c Generated table #33@0: 1325 keys, 235697 bytes
+2019/05/31-11:29:09.485 a7c Compacted 4@0 + 1@1 files => 235697 bytes
+2019/05/31-11:29:09.490 a7c compacted to: files[ 0 1 1 0 0 0 0 ]
+2019/05/31-11:29:09.490 a7c Delete type=2 #27
+2019/05/31-11:29:09.490 a7c Delete type=2 #30
+2019/05/31-11:29:09.490 a7c Delete type=2 #21
+2019/05/31-11:29:09.490 a7c Delete type=2 #32
+2019/05/31-11:29:09.490 a7c Delete type=2 #24
+2019/05/31-12:51:38.815 a7c Level-0 table #35: started
+2019/05/31-12:51:38.833 a7c Level-0 table #35: 108853 bytes OK
+2019/05/31-12:51:38.839 a7c Delete type=0 #31

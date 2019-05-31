@@ -1,0 +1,4 @@
+
+[Default Applications]
+x-scheme-handler/mailto=chromium.desktop
+x-scheme-handler/postman=Postman.desktop

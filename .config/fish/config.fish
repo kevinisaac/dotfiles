@@ -43,7 +43,12 @@ function srestart
     sudo systemctl restart $argv
 end
 
+function senable
+    sudo systemctl enable $argv
+end
+
 alias n ncmpcpp
+alias gac "git add . && git commit"
 
 
 # Shortcuts to start apps
@@ -65,8 +70,8 @@ function startlistino
     python run.py
 end
 
-function startzucumber
-    cd /home/kevin/Code/portalapp1
+function startnewfaces
+    cd /home/kevin/Code/clients/matt/newfaces
     . venv/bin/activate.fish
-    env ENV_TYPE="01" python manage.py runserver
+    python run.py
 end

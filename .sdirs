@@ -1,0 +1,6 @@
+export DIR_junk="$HOME/Junk"
+export DIR_aur="$HOME/Junk/aur"
+export DIR_toshiba="/mnt/toshiba"
+export DIR_movies="$HOME/Videos/movies"
+export DIR_dotfiles="$HOME/Code/dotfiles"
+export DIR_matt="$HOME/Code/clients/matt"

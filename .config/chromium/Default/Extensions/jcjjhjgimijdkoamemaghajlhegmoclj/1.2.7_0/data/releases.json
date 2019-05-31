@@ -1,0 +1,33 @@
+[
+    {
+        "version": [
+            1,
+            6,
+            0
+        ],
+        "changelog": "* Stable release, optional update\n* Native SegWit (Bech32) address support\n* Show recognized BIP44/BIP49 paths in GetAddress dialog\n* NEM support\n* Expanse and UBIQ chains support\n* Bitcoin Gold, DigiByte, Monacoin support\n* Ed25519 collective signatures (CoSi) support",
+        "min_bridge_version": [
+            1,
+            1,
+            5
+        ],
+        "min_version": [
+            0,
+            0,
+            0
+        ],
+        "min_plugin_version": [
+            1,
+            0,
+            5
+        ],
+        "required": false,
+        "min_extension_version": [
+            1,
+            0,
+            15
+        ],
+        "url": "/data/firmware.bin.hex",
+        "fingerprint": "e40f6ce12724c2d24234a7752953b88fd9ec28b3ec72c0dbfa280095a67a06ca"
+    }
+]
