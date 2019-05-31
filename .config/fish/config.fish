@@ -49,6 +49,9 @@ end
 
 alias n ncmpcpp
 alias gac "git add . && git commit"
+alias gl "git pull"
+alias gp "git push"
+alias gss "git status"
 
 
 # Shortcuts to start apps
