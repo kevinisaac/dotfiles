@@ -70,7 +70,7 @@ local editor        = os.getenv("EDITOR") or "vim" or "nano"
 local gui_editor    = "gvim"
 local browser       = "chromium" or "firefox"
 local file_manager  = "xfe"
-local screenshooter = "xfce4-screenshooter"
+local screenshooter = "deepin-screenshot"
 local postman       = "~/Software/Postman/Postman"
 
 awful.util.terminal = terminal
@@ -428,7 +428,7 @@ globalkeys = awful.util.table.join(
     -- User programs
     awful.key({ modkey }, "e", function () awful.spawn(gui_editor) end),
     awful.key({ modkey }, "q", function () awful.spawn(browser) end),
-    awful.key({ modkey }, "p", function () awful.spawn(screenshooter) end),
+    -- awful.key({ modkey }, "s", function () awful.spawn(screenshooter) end),
 
     -- Default
     --[[ Menubar
@@ -528,10 +528,7 @@ globalkeys = awful.util.table.join(
         end),
 
     -- Show Menu
-    awful.key({ modkey }, "w",
-        function ()
-            mymainmenu:show({ keygrabber = true })
-        end),
+    awful.key({ modkey }, "w", function (client) client:kill () end),
 
     -- Show/Hide Wibox
     awful.key({ modkey }, "q", function ()
@@ -642,10 +639,11 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey }, "e", function () awful.util.spawn(file_manager) end),
     awful.key({ modkey }, "b", function () awful.util.spawn(browser) end),
     awful.key({ modkey }, "i", function () awful.util.spawn(browser2) end),
-    awful.key({ modkey }, "s", function () awful.util.spawn(gui_editor) end),
+    -- awful.key({ modkey }, "s", function () awful.util.spawn(gui_editor) end),
     awful.key({ modkey }, "g", function () awful.util.spawn(graphics) end),
     awful.key({ modkey }, "a", function () awful.util.spawn(linthesia) end),
     awful.key({ modkey }, "m", function () awful.util.spawn(html_editor) end),
+    awful.key({ modkey }, "s", function () awful.util.spawn(screenshooter) end),
 
     -- Prompt
     -- awful.key({ modkey }, "r", function () mypromptbox[mouse.screen]:run() end),
