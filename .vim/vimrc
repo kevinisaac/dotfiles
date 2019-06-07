@@ -96,7 +96,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-airline/vim-airline-themes'
     Plug 'Yggdroot/indentLine'          " The thin line along indentation
 
-    " Plug 'mattn/emmet-vim'
+    Plug 'mattn/emmet-vim'
     Plug 'garbas/vim-snipmate'
     Plug 'MarcWeber/vim-addon-mw-utils' " Dependency for snipmate
     Plug 'tomtom/tlib_vim'              " Dependency for snipmate
@@ -105,6 +105,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'jiangmiao/auto-pairs'         " Pair ', \", {, [ and (
 
     Plug 'Glench/Vim-Jinja2-Syntax'
+    Plug 'mxw/vim-jsx'
 call plug#end()
 
 " Emmet Plugin
@@ -144,7 +145,8 @@ noremap <C-e> <Esc>:so ~/.vim/vimrc<CR>
 noremap <C-Up> ddkP
 noremap <C-Down> ddp
 
-" Emmet mapping
+" Emmet
+let g:user_emmet_settings = {'html':{'quote_char':"'"},'javascript':{'quote_char':"'"}}
 
 " Remapping tcomment toggle key
 map <C-c> gcc
