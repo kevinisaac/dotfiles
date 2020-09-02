@@ -1,9 +1,9 @@
 /* URxvt*termName: rxvt-unicode */
 URxvt*cursorBlink:      false
 /* URxvt*cursorUnderline:  true */
-URxvt*font:             xft:Inconsolata\ for\ Powerline:pixelsize=17,xft:Unifont,xft:Symbola:size=17,xft:Terminess\ Powerline:size=17,xft:Noto\ Sans:pixelsize=17,xft:Terminus:pixelsize=17,xft:DejaVuSans:pixelsize=17
+URxvt*font:             xft:Inconsolata\ for\ Powerline:pixelsize=20,xft:Unifont,xft:Symbola:size=17,xft:Terminess\ Powerline:size=17,xft:Noto\ Sans:pixelsize=17,xft:Terminus:pixelsize=17,xft:DejaVuSans:pixelsize=17
 /*URxvt*font:             xft:Inconsolata\-g\ for\ Powerline:pixelsize=15*/
-URxvt*boldFont:         xft:Inconsolata\ for\ Powerline:bold:pixelsize=17,xft: Unifont,xft: Symbola:size=17,xft: Terminess\ Powerline:size=17,xft:Noto\ Sans:pixelsize=17,xft:Terminus:pixelsize=17,xft:DejaVuSans:pixelsize=17
+URxvt*boldFont:         xft:Inconsolata\ for\ Powerline:bold:pixelsize=20,xft: Unifont,xft: Symbola:size=17,xft: Terminess\ Powerline:size=17,xft:Noto\ Sans:pixelsize=17,xft:Terminus:pixelsize=17,xft:DejaVuSans:pixelsize=17
 URxvt*scrollBar:        false
 URxvt.perl-ext-common:  default,matcher
 URxvt.url-launcher:     chromium
@@ -11,8 +11,8 @@ URxvt.matcher.button:   1
 URxvt.internalBorder:   10
 /* URxvt.lineSpace:        1 */
 URxvt.letterSpace:      -1
-/* URxvt*iso14755:         false */
-/* URxvt*iso14755_52:      false */
+URxvt*iso14755:         false
+URxvt*iso14755_52:      false
 
 *.foreground: #ccb18b
 *.cursorcolor:#ccb18b
@@ -60,3 +60,10 @@ URxvt.keysym.Control-Up:    \033[1;5A
 URxvt.keysym.Control-Down:  \033[1;5B
 URxvt.keysym.Control-Left:  \033[1;5D
 URxvt.keysym.Control-Right: \033[1;5C
+
+! https://unix.stackexchange.com/questions/294337/rebinding-ctrl-alt-c
+! URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+! URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+! URxvt.keysym.Control-Meta-c: builtin-string:
+! URxvt.keysym.Control-Meta-v: builtin-string:
+

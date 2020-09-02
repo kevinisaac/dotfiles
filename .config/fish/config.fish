@@ -1,4 +1,4 @@
-set -x BROWSER chromium
+set -x BROWSER vivaldi-stable
 set -x EDITOR vim
 set -x TERMINAL urxvt
 set -x ttymouse xterm2
@@ -78,3 +78,59 @@ function startnewfaces
     . venv/bin/activate.fish
     python run.py
 end
+
+function startlyricist
+    cd /home/kevin/Code/lyricist
+    . venv/bin/activate.fish
+    python run.py
+end
+
+function startvisconti
+    cd /home/kevin/Code/clients/matt/visconti
+    . venv/bin/activate.fish
+    python run.py
+end
+
+function startda
+    cd /home/kevin/Code/zephony/diagonalley
+    . venv/bin/activate.fish
+    python run.py
+end
+
+function startjournal
+    cd /home/kevin/Code/zephony/journal
+    . venv/bin/activate.fish
+    python run.py
+end
+
+function startbolero
+    cd /home/kevin/Code/clients/matt/bolero
+    . venv/bin/activate.fish
+    python run.py
+end
+
+function startalibalance
+    cd /home/kevin/Code/clients/matt/alibalance
+    . venv/bin/activate.fish
+    python run.py
+end
+
+function startoswal
+    cd /home/kevin/Code/clients/cartoonmango/oswal
+    . venv/bin/activate.fish
+    python run.py
+end
+
+function startdash
+    cd /home/kevin/Code/clients/todd/m5dashboard
+    . venv/bin/activate.fish
+    python run.py
+end
+
+# React Native related
+set -x ANDROID_HOME $HOME/Android/Sdk
+set -x PATH $PATH $ANDROID_HOME/tools
+set -x PATH $PATH $ANDROID_HOME/tools/bin
+set -x PATH $PATH $ANDROID_HOME/emulator
+set -x PATH $PATH $ANDROID_HOME/platform-tools
+

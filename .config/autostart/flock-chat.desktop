@@ -1,0 +1,8 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=flock-chat
+Comment=flock-chatstartup script
+Exec=/var/lib/snapd/snap/flock-chat/157/flock-chat --hidden
+StartupNotify=false
+Terminal=false

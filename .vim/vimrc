@@ -88,24 +88,30 @@ call plug#begin('~/.vim/plugged')
     Plug 'ctrlpvim/ctrlp.vim'           " The search plugin
     " Plug 'xolox/vim-session'            " Session manager
     " Plug 'xolox/vim-misc'               " Dependency for Session manager
-
-    " Plug 'gaving/vim-textobj-argument'  " To treat arguments like objects
+    Plug 'tpope/vim-eunuch'             " Enables UNIX shell like commands
+    
+    Plug 'gaving/vim-textobj-argument'  " To treat arguments like objects
     Plug 'tomtom/tcomment_vim'          " For toggling comment
 
+    " Theme related
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
+
     Plug 'Yggdroot/indentLine'          " The thin line along indentation
 
-    Plug 'mattn/emmet-vim'
-    Plug 'garbas/vim-snipmate'
+    Plug 'mattn/emmet-vim'              " Emmet
+    Plug 'garbas/vim-snipmate'          " Snipmate
     Plug 'MarcWeber/vim-addon-mw-utils' " Dependency for snipmate
     Plug 'tomtom/tlib_vim'              " Dependency for snipmate
     Plug 'honza/vim-snippets'           " Optional dependency for snipmate
-    " Plug 'tpope/vim-surround'
     Plug 'jiangmiao/auto-pairs'         " Pair ', \", {, [ and (
+    " Plug 'tpope/vim-surround'
 
     Plug 'Glench/Vim-Jinja2-Syntax'
-    Plug 'mxw/vim-jsx'
+    Plug 'MaxMEllon/vim-jsx-pretty'
+
+    Plug 'epilande/vim-react-snippets'  " React code snippets
+    " Plug 'prettier/vim-prettier'
 call plug#end()
 
 " Emmet Plugin
@@ -118,6 +124,7 @@ let g:indentLine_color_term = 7
 " ctrlp.vim Plugin
 set shell=/bin/bash " Required if bash is not used as the user's shell
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
+let g:ctrlp_custom_ignore = 'react'
 
 " Vim sessions
 let g:session_autosave = 'no'
@@ -126,15 +133,17 @@ let g:session_autoload = 'no'
 " Custom Vim commands
 " command Evimrc :e ~/.vim/vimrc
 
+" Prettier related
+" autocmd BufWritePre *.js Prettier
 
 
 
 " View manipulation
-noremap tt  :tab split<CR>
+noremap tt :tab split<CR>
 map '' :vsplit<CR>
 map "" :split<CR>
-map ;; :wq<CR>
-map <Tab> <c-w><c-w>
+" map ;; :wq<CR>
+nmap <Tab> <c-w><c-w>
 
 " File manipulation
 map <c-s> <Esc>:w<CR>
@@ -142,13 +151,28 @@ inoremap <c-s> <Esc>:w<CR>
 noremap <c-q> <Esc>:q<CR>
 noremap <C-e> <Esc>:so ~/.vim/vimrc<CR>
 
-noremap <C-Up> ddkP
-noremap <C-Down> ddp
+
+" Move current line
+noremap <C-Up> :m .-2<CR>
+noremap <C-Down> :m .+1<CR>
+
+" Duplicate current line
+noremap <S-Up> :t .-1<CR>
+noremap <S-Down> :t .<CR>
 
 " Emmet
 let g:user_emmet_settings = {'html':{'quote_char':"'"},'javascript':{'quote_char':"'"}}
 
 " Remapping tcomment toggle key
 map <C-c> gcc
+" vmap <C-c> gcc
 
 " set background=dark
+
+inoremap <C-z> <Esc>u
+inoremap <A-a> <Esc>
+
+execute "set <M-a>=\ea"
+noremap <M-a> <Esc>
+vnoremap <M-a> <Esc>
+

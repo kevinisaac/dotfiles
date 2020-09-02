@@ -22,6 +22,7 @@ local lain          = require("lain")
 --local menubar       = require("menubar")
 local freedesktop   = require("freedesktop")
 local hotkeys_popup = require("awful.hotkeys_popup").widget
+
 -- }}}
 
 -- {{{ Error handling
@@ -68,8 +69,8 @@ local altkey        = "Mod1"
 local terminal      = "urxvt" or "xterm"
 local editor        = os.getenv("EDITOR") or "vim" or "nano"
 local gui_editor    = "gvim"
-local browser       = "chromium" or "firefox"
-local file_manager  = "xfe"
+local browser       = "vivaldi-stable" or "chromium" or "firefox"
+local file_manager  = "fman"
 local screenshooter = "deepin-screenshot"
 local postman       = "~/Software/Postman/Postman"
 
@@ -270,8 +271,8 @@ globalkeys = awful.util.table.join(
             awful.client.focus.bydirection("right")
             if client.focus then client.focus:raise() end
         end),
-    awful.key({ modkey,           }, "w", function () awful.util.mymainmenu:show() end,
-              {description = "show main menu", group = "awesome"}),
+    -- awful.key({ modkey,           }, "w", function () awful.util.mymainmenu:show() end,
+              -- {description = "show main menu", group = "awesome"}),
 
     -- Layout manipulation
     awful.key({ modkey, "Shift"   }, "j", function () awful.client.swap.byidx(  1)    end,
@@ -355,7 +356,7 @@ globalkeys = awful.util.table.join(
 
     -- Widgets popups
     awful.key({ altkey, }, "c", function () lain.widget.calendar.show(7) end),
-    awful.key({ altkey, }, "h", function () if beautiful.fs then beautiful.fs.show(7) end end),
+    -- awful.key({ altkey, }, "h", function () if beautiful.fs then beautiful.fs.show(7) end end),
     awful.key({ altkey, }, "w", function () if beautiful.weather then beautiful.weather.show(7) end end),
 
     -- ALSA volume control
@@ -528,7 +529,7 @@ globalkeys = awful.util.table.join(
         end),
 
     -- Show Menu
-    awful.key({ modkey }, "w", function (client) client:kill () end),
+    -- awful.key({ modkey }, "w", function (client) client:kill () end),
 
     -- Show/Hide Wibox
     awful.key({ modkey }, "q", function ()
@@ -542,13 +543,13 @@ globalkeys = awful.util.table.join(
     awful.key({ modkey, "Control" }, "j", function () awful.screen.focus_relative( 1) end),
     awful.key({ modkey, "Control" }, "k", function () awful.screen.focus_relative(-1) end),
     awful.key({ modkey,           }, "u", awful.client.urgent.jumpto),
-    -- awful.key({ modkey,           }, "Tab",
-    --     function ()
-    --         awful.client.focus.history.previous()
-    --         if client.focus then
-    --             client.focus:raise()
-    --         end
-    --     end),
+    awful.key({ modkey,           }, "Tab",
+        function ()
+            awful.client.focus.history.previous()
+            if client.focus then
+                client.focus:raise()
+            end
+        end),
     awful.key({ altkey, "Shift"   }, "l",      function () awful.tag.incmwfact( 0.05)     end),
     awful.key({ altkey, "Shift"   }, "h",      function () awful.tag.incmwfact(-0.05)     end),
     awful.key({ modkey, "Shift"   }, "l",      function () awful.tag.incnmaster(-1)       end),
@@ -576,7 +577,7 @@ globalkeys = awful.util.table.join(
 
     -- Widgets popups
     awful.key({ modkey,           }, "c",      function () lain.widgets.calendar:show(7) end),
-    awful.key({ altkey,           }, "h",      function () fswidget.show(7) end),
+    -- awful.key({ altkey,           }, "h",      function () fswidget.show(7) end),
     awful.key({ altkey,           }, "w",      function () yawn.show(7) end),
 
     -- ALSA volume control
@@ -662,14 +663,14 @@ globalkeys = awful.util.table.join(
 -- }}}
 
 clientkeys = awful.util.table.join(
-    awful.key({ altkey, "Shift"   }, "m",      lain.util.magnify_client                         ),
-    awful.key({ modkey,           }, "f",
+    awful.key({ altkey, "Shift" }, "m",      lain.util.magnify_client                         ),
+    awful.key({ modkey,         }, "f",
         function (c)
             c.fullscreen = not c.fullscreen
             c:raise()
         end,
         {description = "toggle fullscreen", group = "client"}),
-    awful.key({ modkey, "Shift"   }, "c",      function (c) c:kill()                         end,
+    awful.key({ modkey,         }, "w",      function (c) c:kill()                         end,
               {description = "close", group = "client"}),
     awful.key({ modkey, "Control" }, "space",  awful.client.floating.toggle                     ,
               {description = "toggle floating", group = "client"}),

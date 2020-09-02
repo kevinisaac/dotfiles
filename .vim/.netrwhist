@@ -1,4 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =2
-let g:netrw_dirhist_1='/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0003:00/power_supply/AC'
-let g:netrw_dirhist_2='/sys/devices/LNXSYSTM:00/LNXSYBUS:00/ACPI0003:00/power_supply/AC/power'
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/kevin/Code/clients/cartoonmango/oswal/static/admin-js/react/src/pages/components'
+let g:netrw_dirhist_6='/home/kevin/Code/dotfiles/.vim/plugged/vim-snippets/UltiSnips'
+let g:netrw_dirhist_5='/home/kevin/Code/dotfiles/.vim/plugged/vim-snippets'
+let g:netrw_dirhist_4='/etc/xdg/autostart'
+let g:netrw_dirhist_3='/etc/xdg'
+let g:netrw_dirhist_2='/'
+let g:netrw_dirhist_1='/usr'
+let g:netrw_dirhist_0='/usr/share'
+let g:netrw_dirhist_9='/usr/share/applications'
+let g:netrw_dirhist_8='/home/kevin/Code/clients/cartoonmango/oswal/static/images/icons/admin'

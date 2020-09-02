@@ -10,6 +10,7 @@ local gears  = require("gears")
 local lain   = require("lain")
 local awful  = require("awful")
 local wibox  = require("wibox")
+-- local net_widgets = require("../../net_widgets/internet.lua")
 local string = string
 local os     = { getenv = os.getenv }
 
@@ -382,6 +383,7 @@ function theme.at_screen_connect(s)
             cpuwidget,
             bottom_bar,
             require("battery-widget") {},
+            -- net_widgets,
             bottom_bar,
             calendar_icon,
             calendarwidget,
