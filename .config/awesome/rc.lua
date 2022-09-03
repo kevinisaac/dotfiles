@@ -21,6 +21,7 @@ local naughty       = require("naughty")
 local lain          = require("lain")
 --local menubar       = require("menubar")
 local freedesktop   = require("freedesktop")
+local net_widgets   = require("net_widgets")
 local hotkeys_popup = require("awful.hotkeys_popup").widget
 
 -- }}}

@@ -1,9 +1,9 @@
 /* URxvt*termName: rxvt-unicode */
 URxvt*cursorBlink:      false
 /* URxvt*cursorUnderline:  true */
-URxvt*font:             xft:Inconsolata\ for\ Powerline:pixelsize=20,xft:Unifont,xft:Symbola:size=17,xft:Terminess\ Powerline:size=17,xft:Noto\ Sans:pixelsize=17,xft:Terminus:pixelsize=17,xft:DejaVuSans:pixelsize=17
+URxvt*font:             xft:Inconsolata\ for\ Powerline:pixelsize=22,xft:Unifont,xft:Symbola:size=17,xft:Terminess\ Powerline:size=17,xft:Noto\ Sans:pixelsize=17,xft:Terminus:pixelsize=17,xft:DejaVuSans:pixelsize=17
 /*URxvt*font:             xft:Inconsolata\-g\ for\ Powerline:pixelsize=15*/
-URxvt*boldFont:         xft:Inconsolata\ for\ Powerline:bold:pixelsize=20,xft: Unifont,xft: Symbola:size=17,xft: Terminess\ Powerline:size=17,xft:Noto\ Sans:pixelsize=17,xft:Terminus:pixelsize=17,xft:DejaVuSans:pixelsize=17
+URxvt*boldFont:         xft:Inconsolata\ for\ Powerline:bold:pixelsize=22,xft: Unifont,xft: Symbola:size=17,xft: Terminess\ Powerline:size=17,xft:Noto\ Sans:pixelsize=17,xft:Terminus:pixelsize=17,xft:DejaVuSans:pixelsize=17
 URxvt*scrollBar:        false
 URxvt.perl-ext-common:  default,matcher
 URxvt.url-launcher:     chromium

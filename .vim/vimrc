@@ -37,6 +37,7 @@ filetype indent on
 " Set filetype tab spaces
 autocmd Filetype yaml setlocal ts=2 sw=2 expandtab
 autocmd Filetype html,css,xml,jinja,less,json :setlocal sw=2 ts=2 sts=2
+autocmd Filetype js setlocal sw=2 ts=2 sts=2
 " au BufNewFile,BufRead *.jade set filetype=html
 " autocmd BufRead,BufNewFile *.jade setlocal ft=jade
 au BufRead,BufNewFile *.fish set filetype=fish
@@ -109,7 +110,9 @@ call plug#begin('~/.vim/plugged')
 
     Plug 'Glench/Vim-Jinja2-Syntax'
     Plug 'MaxMEllon/vim-jsx-pretty'
+    Plug 'preservim/nerdtree'
 
+    Plug 'eslint/eslint'
     Plug 'epilande/vim-react-snippets'  " React code snippets
     " Plug 'prettier/vim-prettier'
 call plug#end()
@@ -129,6 +132,9 @@ let g:ctrlp_custom_ignore = 'react'
 " Vim sessions
 let g:session_autosave = 'no'
 let g:session_autoload = 'no'
+
+let g:snipMate = { 'snippet_version' : 1 }
+
 
 " Custom Vim commands
 " command Evimrc :e ~/.vim/vimrc
@@ -162,6 +168,7 @@ noremap <S-Down> :t .<CR>
 
 " Emmet
 let g:user_emmet_settings = {'html':{'quote_char':"'"},'javascript':{'quote_char':"'"}}
+" let g:user_emmet_settings = {'html':{'quote_char':"'"},'javascript':{'quote_char':"'"},'emmet.includeLanguages':{'javascript':'javascriptreact'}}
 
 " Remapping tcomment toggle key
 map <C-c> gcc
