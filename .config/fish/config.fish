@@ -220,11 +220,13 @@ end
 
 function startordwaywebpack1
     cd /home/kevin/Code/ordway/ordway
+    nvm use 18
     env HOT_RAILS_PORT=3500 npm run hot-assets
 end
 
 function startordwaywebpack2
     cd /home/kevin/Code/ordway/ordway
+    nvm use 18
     env NODE_OPTIONS='--max-old-space-size=8192' HOT_RAILS_PORT=3200 npm run hot-assets:v2
 end
 
