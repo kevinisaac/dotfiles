@@ -6,6 +6,22 @@
                                        
 --]]
 
+
+
+-- -- For splitting into two screens
+-- local geo = screen[1].geometry
+-- local new_width = math.ceil(geo.width/2)
+-- local new_width2 = geo.width - new_width
+-- screen[1]:fake_resize(geo.x, geo.y, new_width, geo.height)
+-- screen.fake_add(geo.x + new_width, geo.y, new_width2, geo.height)
+
+-- -- For splitting into three screens
+-- local geo = screen[1].geometry
+-- local one_third_width = math.ceil(geo.width/3)
+-- screen[1]:fake_resize(geo.x, geo.y, one_third_width, geo.height)
+-- screen.fake_add(geo.x + one_third_width, geo.y, one_third_width, geo.height)
+-- screen.fake_add(geo.x + 2 * one_third_width, geo.y, one_third_width, geo.height)
+
 os.execute("xset r rate 220 55")
 
 -- {{{ Required libraries
@@ -70,7 +86,7 @@ local altkey        = "Mod1"
 local terminal      = "urxvt" or "xterm"
 local editor        = os.getenv("EDITOR") or "vim" or "nano"
 local gui_editor    = "gvim"
-local browser       = "vivaldi-stable" or "chromium" or "firefox"
+local browser       = "firefox" or "vivaldi-stable" or "chromium"
 local file_manager  = "fman"
 local screenshooter = "deepin-screenshot"
 local postman       = "~/Software/Postman/Postman"
@@ -164,6 +180,7 @@ lain.layout.cascade.tile.nmaster       = 5
 lain.layout.cascade.tile.ncol          = 2
 
 local theme_path = string.format("%s/.config/awesome/themes/%s/theme.lua", os.getenv("HOME"), chosen_theme)
+local tag2wp = string.format("%s/.config/awesome/themes/%s/wall.png", os.getenv("HOME"), 'blackburn')
 beautiful.init(theme_path)
 -- }}}
 
@@ -195,6 +212,7 @@ screen.connect_signal("property::geometry", function(s)
     -- Wallpaper
     if beautiful.wallpaper then
         local wallpaper = beautiful.wallpaper
+        -- local wallpaper = tag2wp
         -- If wallpaper is a function, call it with the screen
         if type(wallpaper) == "function" then
             wallpaper = wallpaper(s)
@@ -202,6 +220,25 @@ screen.connect_signal("property::geometry", function(s)
         gears.wallpaper.maximized(wallpaper, s, true)
     end
 end)
+
+
+-- local screen = awful.screen.focused()
+-- for t = 1, 5 do
+--     client.focus.screen.tags[1].connect_signal("property::selected", function(tag)
+--         if not tag.selected then return end
+--
+--         -- Wallpaper
+--         if beautiful.wallpapers then
+--             local wallpaper = beautiful.wallpapers[t]
+--             -- local wallpaper = tag2wp
+--             -- If wallpaper is a function, call it with the screen
+--             if type(wallpaper) == "function" then
+--                 wallpaper = wallpaper(s)
+--             end
+--             gears.wallpaper.maximized(wallpaper, s, true)
+--         end
+--     end)
+-- end
 -- Create a wibox for each screen and add it
 awful.screen.connect_for_each_screen(function(s) beautiful.at_screen_connect(s) end)
 -- }}}

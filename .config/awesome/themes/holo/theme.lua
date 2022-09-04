@@ -17,7 +17,18 @@ local os     = { getenv = os.getenv }
 local theme                                     = {}
 theme.default_dir                               = require("awful.util").get_themes_dir() .. "default"
 theme.icon_dir                                  = os.getenv("HOME") .. "/.config/awesome/themes/holo/icons"
-theme.wallpaper                                 = os.getenv("HOME") .. "/.config/awesome/themes/holo/wall.png"
+theme.wallpaper                                 = os.getenv("HOME") .. "/.config/awesome/themes/blackburn/wall.png"
+theme.wallpapers                                = {
+    os.getenv("HOME") .. "/.config/awesome/themes/blackburn/wall.png",
+    os.getenv("HOME") .. "/.config/awesome/themes/copland/wall.png",
+    os.getenv("HOME") .. "/.config/awesome/themes/dremora/wall.png",
+    os.getenv("HOME") .. "/.config/awesome/themes/steamburn/wall.png",
+    os.getenv("HOME") .. "/.config/awesome/themes/vertex/wall.png"
+}
+-- theme.wallpaper2                                = os.getenv("HOME") .. "/.config/awesome/themes/copland/wall.png"
+-- theme.wallpaper3                                = os.getenv("HOME") .. "/.config/awesome/themes/dremora/wall.png"
+-- theme.wallpaper4                                = os.getenv("HOME") .. "/.config/awesome/themes/steamburn/wall.png"
+-- theme.wallpaper5                                = os.getenv("HOME") .. "/.config/awesome/themes/vertex/wall.png"
 -- theme.font                                      = "Roboto Bold 10"
 theme.font                                      = "Inconsolata for Powerline Bold 10"
 theme.taglist_font                              = "Inconsolata for Powerline Bold 10"

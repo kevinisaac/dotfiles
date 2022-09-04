@@ -242,6 +242,13 @@ function startviscom
 end
 
 
+function startaccountal
+    cd /home/kevin/Code/zephony/accountal
+    . venv/bin/activate.fish
+    python run.py
+end
+
+
 
 # React Native related
 set -x ANDROID_HOME $HOME/Android/Sdk
